@@ -1,29 +1,50 @@
 body {
-    font-family: 'DM Sans', sans-serif;
-    color: #ffffff;
+  font-family: 'DM Sans', sans-serif;
+  color: #ffffff;
 }
-h1, h2, h3, h4, h5, h6, p, ul {
-    margin: 0;
-    padding: 0;
+html {
+  scroll-behavior: smooth;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+address {
+  margin: 0;
+  padding: 0;
 }
 ul {
-    list-style: none;
+  list-style: none;
 }
 img {
-    display: block;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
-.conteiner {
-    margin: 0 auto;
-    padding: 0 15px;
-    @media screen and (min-width: 480px) {
+a {
+  text-decoration: none;
+  color: inherit;
+}
+address {
+  font-style: inherit;
+}
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  @media screen and (min-width: 480px) {
     width: 480px;
-    }
+  }
 
-    @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     width: 768px;
-    }
+  }
 
-    @media screen and (min-width: 1200px) {
-    width: 1200px;
-    }
+  @media screen and (min-width: 1280px) {
+    width: 1080px;
+  }
 }
