@@ -38,20 +38,64 @@ img {
   margin: 0 auto;
 }
 
-.customer-reviews__text {
-  position: relative;
-  padding: 43px 66px 26px 57px;
+.customer-reviews__text-overlay {
+  margin-bottom: 18px;
+  padding: 43px 50px 26px 50px;
   font-size: 12px;
   line-height: 2.55;
   background-color: #fafafa;
+
+  &::after {
+    content: ' ';
+    display: block;
+    left: 0;
+    bottom: 0;
+    width: 32px;
+    height: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    background-image: url('../images/dots.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      & {
+        background-image: url('../images/dots2x.png');
+      }
+    }
+
+    @media (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+      & {
+        background-image: url('../images/dots3x.png');
+      }
+    }
+  }
+}
+
+.customer-reviews__text {
+  position: relative;
+  padding-left: 7px;
+  padding-right: 16px;
+  padding-bottom: 3px;
   z-index: 1;
+  background-image: repeating-linear-gradient(
+    transparent 0px,
+    transparent 30px,
+    #e1e1e1 30px,
+    #e1e1e1 31px
+  );
+  background-position: 0% 50%;
+  background-repeat: repeat-y;
+  background-size: 100% 100%;
 
   &::before {
     content: ' ';
     display: block;
     position: absolute;
-    top: 28px;
-    left: 61px;
+    top: -15px;
+    left: 11px;
     width: 54px;
     height: 40px;
     background-image: url('../images/quote.svg');
