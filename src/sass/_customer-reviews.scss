@@ -104,6 +104,25 @@ img {
 }
 
 .customer-reviews__caption {
+  margin-bottom: 30px;
   font-size: 14px;
   line-height: 1.86;
+}
+
+.customer-reviews__icons-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  justify-content: center;
+  align-items: center;
+}
+
+.customer-reviews__icon {
+  width: 12px;
+  height: 12px;
+  fill: #d9d9d9;
+
+  .customer-reviews__icons:first-child & {
+    fill: #d31342;
+  }
 }
