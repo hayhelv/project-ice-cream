@@ -50,11 +50,11 @@
   margin-bottom: 29px;
 
   @media screen and (min-width: 768px) {
-    padding-bottom: 19px;
+    margin-bottom: 19px;
   }
 
   @media screen and (min-width: 1280px) {
-    padding-bottom: 15px;
+    margin-bottom: 15px;
   }
 }
 
@@ -68,7 +68,7 @@
 
   @media screen and (min-width: 768px) {
     margin-bottom: 24px;
-    padding: 30px 36px 28px 55px;
+    padding: 47px 36px 28px 60px;
     font-size: 14px;
     line-height: 2.16;
     letter-spacing: 0.04em;
@@ -76,7 +76,7 @@
 
   @media screen and (min-width: 1280px) {
     margin-bottom: 15px;
-    padding: 32px 54px 32px 59px;
+    padding: 47px 54px 32px 59px;
     font-size: 16px;
     line-height: 1.86;
   }
@@ -133,6 +133,7 @@
   }
 
   @media screen and (min-width: 1280px) {
+    padding-top: 2px;
     padding-left: 28px;
     padding-right: 35px;
     padding-bottom: 7px;
