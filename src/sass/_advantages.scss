@@ -79,7 +79,7 @@
         }
     }
 
-    .advantages__item-second::before{
+    .advantages__item-third::before{
         content:'';
         display: block;
         width: 44px;
@@ -99,6 +99,27 @@
             background-image: url(../images/heart3x.png);
         }
     }
+
+    // .advantages__item-third::before{
+    //     content: '';
+    //     display: block;
+    //     width: 44px;
+    //     height: 50px;
+    //     background-repeat: no-repeat;
+    //     background-size: contain;
+    //     background-image: url(../images/heart.png);
+
+    //     @media screen and(min-device-pixel-ratio: 2),
+    //     (min-resolution: 192dpi),
+    //     (min-resolution: 2dppx) {
+    //         background-image: url(../images/heart2x.png);
+    //     }
+    //     @media screen and(min-device-pixel-ratio: 3),
+    //     (min-resolution: 288dpi),
+    //     (min-resolution: 3dppx) {
+    //         background-image: url(../images/heart3x.png);
+    //     }
+    // }
 
 .advantage__text {
     margin-top: 16px;
