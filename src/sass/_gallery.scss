@@ -1,0 +1,24 @@
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0px;
+  padding: 0px;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+.gallery {
+  padding-bottom: 80px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 121px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 123px;
+  }
+}
+.gallery__img {
+  width: 100%;
+}
