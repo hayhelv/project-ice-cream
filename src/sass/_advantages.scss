@@ -2,12 +2,9 @@
     background-color: #FFF5F6;;
 }
 .advantages__container {
-    padding-bottom: 145px;
+    padding-bottom: 97px;
     @media screen and(min-width:768px) {
-        padding-bottom: 246px;
-    }
-    @media screen and(min-width:1280px) {
-        padding-bottom: 310px;
+        padding-bottom: 140px;
     }
 }
 
@@ -26,7 +23,7 @@
         width: 230px;
     }
     @media screen and(min-width:768px) {
-        flex-basis: calc((100% - 180px)/ 3);
+        flex-basis: calc((100% - 180px) / 3);
         margin: 30px;
     }
     @media screen and(min-width:1280px) {
