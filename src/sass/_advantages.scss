@@ -1,168 +1,153 @@
 .advantages {
-    background-color: #FFF5F6;;
+  background-color: #fff5f6;
 }
 .advantages__container {
-    padding-bottom: 97px;
-    @media screen and(min-width:768px) {
-        padding-bottom: 140px;
-    }
+  padding-bottom: 97px;
+  @media screen and(min-width:768px) {
+    padding-bottom: 140px;
+  }
 }
 
 .advantages__list {
-@media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     display: flex;
-    margin: -30px;
-}
-@media screen and(min-width:1280px) {
-    margin: -15px;
-}
+    gap: 60px;
+  }
+  @media screen and(min-width:1280px) {
+    gap: 30px;
+  }
 }
 
 .advantages__item {
+  @media screen and(max-width:767px) {
+    width: 230px;
+  }
+  @media screen and(min-width:768px) {
+    flex-basis: calc((100% - 180px) / 3);
+  }
+  @media screen and(min-width:1280px) {
+    flex-basis: calc((100% - 90px) / 3);
+  }
+  &:not(:last-child) {
     @media screen and(max-width:767px) {
-        width: 230px;
+      margin-bottom: 38px;
     }
-    @media screen and(min-width:768px) {
-        flex-basis: calc((100% - 180px) / 3);
-        margin: 30px;
-    }
-    @media screen and(min-width:1280px) {
-        flex-basis: calc((100% - 90px) / 3);
-        margin: 15px;
-    }
-    &:not(:last-child) {
-        @media screen and(max-width:767px) {
-            margin-bottom: 38px;
-        }
-    }
-
+  }
 }
 .advantages__item-first::before {
-        content:'';
-        display: block;
-        width: 33px;
-        height: 50px;
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-image: url(../images/sun.png);
+  content: '';
+  display: block;
+  width: 33px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(../images/sun.png);
 
-        @media screen and(min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            background-image: url(../images/sun2x.png);
-        }
-        @media screen and(min-device-pixel-ratio: 3),
-        (min-resolution: 288dpi),
-        (min-resolution: 3dppx) {
-            background-image: url(../images/sun3x.png);
-        }
-    }
+  @media screen and(min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/sun2x.png);
+  }
+  @media screen and(min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+    background-image: url(../images/sun3x.png);
+  }
+}
 
-    .advantages__item-second::before {
-        content:'';
-        display: block;
-        width: 50px;
-        height: 50px;
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-image: url(../images/apple.png);
+.advantages__item-second::before {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(../images/apple.png);
 
-        @media screen and(min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            background-image: url(../images/apple2x.png);
-        }
-        @media screen and(min-device-pixel-ratio: 3),
-        (min-resolution: 288dpi),
-        (min-resolution: 3dppx) {
-            background-image: url(../images/apple3x.png);
-        }
-    }
+  @media screen and(min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/apple2x.png);
+  }
+  @media screen and(min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+    background-image: url(../images/apple3x.png);
+  }
+}
 
-    .advantages__item-third::before{
-        content:'';
-        display: block;
-        width: 44px;
-        height: 50px;
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-image: url(../images/heart.png);
+.advantages__item-third::before {
+  content: '';
+  display: block;
+  width: 44px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(../images/heart.png);
 
-        @media screen and(min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            background-image: url(../images/heart2x.png);
-        }
-        @media screen and(min-device-pixel-ratio: 3),
-        (min-resolution: 288dpi),
-        (min-resolution: 3dppx) {
-            background-image: url(../images/heart3x.png);
-        }
-    }
+  @media screen and(min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/heart2x.png);
+  }
+  @media screen and(min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+    background-image: url(../images/heart3x.png);
+  }
+}
 
-    // .advantages__item-third::before{
-    //     content: '';
-    //     display: block;
-    //     width: 44px;
-    //     height: 50px;
-    //     background-repeat: no-repeat;
-    //     background-size: contain;
-    //     background-image: url(../images/heart.png);
+// .advantages__item-third::before{
+//     content: '';
+//     display: block;
+//     width: 44px;
+//     height: 50px;
+//     background-repeat: no-repeat;
+//     background-size: contain;
+//     background-image: url(../images/heart.png);
 
-    //     @media screen and(min-device-pixel-ratio: 2),
-    //     (min-resolution: 192dpi),
-    //     (min-resolution: 2dppx) {
-    //         background-image: url(../images/heart2x.png);
-    //     }
-    //     @media screen and(min-device-pixel-ratio: 3),
-    //     (min-resolution: 288dpi),
-    //     (min-resolution: 3dppx) {
-    //         background-image: url(../images/heart3x.png);
-    //     }
-    // }
+//     @media screen and(min-device-pixel-ratio: 2),
+//     (min-resolution: 192dpi),
+//     (min-resolution: 2dppx) {
+//         background-image: url(../images/heart2x.png);
+//     }
+//     @media screen and(min-device-pixel-ratio: 3),
+//     (min-resolution: 288dpi),
+//     (min-resolution: 3dppx) {
+//         background-image: url(../images/heart3x.png);
+//     }
+// }
 
 .advantage__text {
-    margin-top: 16px;
-    @media screen and(min-width:768px) {
-        margin-top: 36px;
-    }
-    @media screen and(min-width:1280px) {
-        margin-top: 40px;
-    }
-    margin-bottom: 15px;
+  margin-top: 16px;
+  @media screen and(min-width:768px) {
+    margin-top: 36px;
+  }
+  @media screen and(min-width:1280px) {
+    margin-top: 40px;
+  }
+  margin-bottom: 15px;
 
-    font-family: Titan One;
-    font-size: 36px;
-    line-height: 1.14;
-letter-spacing: 0.04em;
-text-transform: uppercase;
-color: #D41443;
+  font-family: Titan One;
+  font-size: 36px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
 
-@media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     font-size: 48px;
     line-height: 1.15;
-}
+  }
 
-@media screen and (min-width:1280px) {
+  @media screen and (min-width: 1280px) {
     font-size: 58px;
     line-height: 1.14;
-}
+  }
 }
 
 .advantage__description {
-    font-weight: 700;
-font-size: 12px;
-line-height: 1.70;
-letter-spacing: 0.02em;
-color: #000000;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.7;
+  letter-spacing: 0.02em;
+  color: #000000;
 
-@media screen and(min-width:768px) {
+  @media screen and(min-width:768px) {
     font-size: 14px;
     line-height: 1.74;
-}
+  }
 
-@media screen and(min-width:1280px) {
+  @media screen and(min-width:1280px) {
     font-size: 16px;
     line-height: 1.76;
-}
+  }
 }
