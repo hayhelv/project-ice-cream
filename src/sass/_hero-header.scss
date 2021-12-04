@@ -1,0 +1,364 @@
+.header {
+  position: relative;
+  min-width: 320px;
+}
+
+.up {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  transform: translateX(-50%);
+
+  z-index: 2;
+  min-width: 320px;
+  width: 100%;
+  padding: 8px 20px 0 20px;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding: 37px 34px 0 34px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 1080px;
+  }
+
+  &__btns {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.burger {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  width: 20px;
+  height: 20px;
+
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  z-index: 10;
+
+  margin-right: 30px;
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+
+  // &:hover,
+  // &:focus {
+  //   .icon-menu {
+  //     stroke: #fff;
+  //   }
+  // }
+
+  .icon-menu {
+    stroke: #d41443;
+    stroke-width: 2.2857px;
+  }
+
+  .icon-close {
+    display: none;
+  }
+
+  &.is-open {
+    .icon-close {
+      display: block;
+      stroke: #fff;
+      stroke-width: 2px;
+      z-index: 1;
+
+      // @media screen and (min-width: 768px) {
+      //   margin-right: 0;
+      // }
+    }
+    .icon-menu {
+      display: none;
+    }
+  }
+}
+
+// mobile-menu
+
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+
+  margin: 0;
+  display: none;
+  z-index: 9;
+  padding-top: 60px;
+
+  background: #e17992;
+
+  &.is-open {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    flex-direction: column;
+    width: 254px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    align-items: center;
+    position: static;
+    height: 0;
+  }
+}
+
+.buy {
+  width: 209px;
+  height: 44px;
+
+  background: #fff;
+  color: #d41443;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 22px;
+  outline: none;
+
+  padding: 0;
+
+  &__icon {
+    display: inline-flex;
+    align-items: center;
+
+    fill: #fff;
+    stroke: #d41443;
+    margin-left: 27px;
+  }
+  &__icon--desktop {
+    margin-left: 12px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 186px;
+  }
+
+  &:hover,
+  &:focus {
+    background: #ecebeb;
+  }
+}
+.buy--desktop {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    width: 160px;
+  }
+}
+// navigation
+
+.nav {
+  margin-top: 21px;
+  width: 100%;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 11px 0 13px 21px;
+    border: 1px solid #e18298;
+  }
+
+  &__link {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    color: #fff;
+
+    &:hover,
+    &:focus {
+      color: #d41443;
+    }
+  }
+}
+
+.hero {
+  background: #ffb8ca;
+  position: relative;
+  height: 100vh;
+  min-width: 320px;
+  max-height: 502px;
+  overflow: hidden;
+
+  @media screen and (min-width: 768px) {
+    max-height: 400px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-height: 665px;
+  }
+
+  &__title {
+    position: absolute;
+    top: 193px;
+    left: 20px;
+
+    font-family: Titan One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    display: block;
+    z-index: 1;
+
+    @media screen and (min-width: 768px) {
+      top: 102px;
+      left: 34px;
+
+      font-size: 22px;
+      line-height: 25px;
+    }
+    @media screen and (min-width: 1280px) {
+      top: 171px;
+      left: 115px;
+
+      font-size: 38px;
+      line-height: 44px;
+    }
+
+    .passion {
+      font-size: 48px;
+      line-height: 96.5%;
+      color: #d41443;
+      z-index: 20;
+
+      @media screen and (min-width: 768px) {
+        top: 102px;
+        left: 34px;
+
+        font-size: 34px;
+        line-height: 90.5%;
+      }
+      @media screen and (min-width: 1280px) {
+        top: 171px;
+        left: 115px;
+
+        font-size: 58px;
+        line-height: 90.5%;
+      }
+    }
+  }
+
+  &__ice {
+    position: absolute;
+    top: 92px;
+    right: 32px;
+    width: 171px;
+    height: 410px;
+
+    @media screen and (min-width: 768px) {
+      top: 63px;
+      left: 378px;
+      width: 143px;
+      height: 336px;
+    }
+    @media screen and (min-width: 1280px) {
+      top: 108px;
+      left: 594px;
+      width: 236px;
+      height: 557px;
+    }
+  }
+  &__elipse {
+    position: absolute;
+    top: 83px;
+    right: -60px;
+    width: 346px;
+
+    @media screen and (min-width: 768px) {
+      top: 31px;
+      left: 307px;
+      width: 324px;
+    }
+    @media screen and (min-width: 1280px) {
+      top: 52px;
+      left: 475px;
+      width: 538px;
+    }
+  }
+}
+
+.anchor {
+  position: absolute;
+  top: 318px;
+  left: 20px;
+
+  display: flex;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    top: 202px;
+    left: 34px;
+  }
+  @media screen and (min-width: 1280px) {
+    top: 333px;
+    left: 115px;
+  }
+
+  &__btn {
+    font-size: 8px;
+    line-height: 10px;
+
+    border-radius: 20px;
+    border: none;
+    z-index: 1;
+  }
+  &__products {
+    width: 62.4px;
+    height: 24px;
+
+    color: #fff;
+
+    background-color: #d41443;
+
+    margin-right: 8px;
+  }
+  &__made {
+    width: 82.8px;
+    height: 24px;
+
+    color: #d41443;
+
+    background-color: #fff;
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+}
