@@ -28,6 +28,7 @@
   background-color: inherit;
   border-color: transparent;
   outline: #ffffff;
+  z-index: 6;
 }
 
 .backdrop__icon {
@@ -63,11 +64,11 @@
   }
 
   @media screen and (min-width: 768px) {
-    width: 80%;
+    width: 65%;
   }
 
   @media screen and (min-width: 1280px) {
-    width: 70%;
+    width: 50%;
   }
 }
 
