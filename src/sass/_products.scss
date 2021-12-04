@@ -13,7 +13,7 @@
 }
 
 .products__description {
-  padding-bottom: 15px;
+  margin-bottom: 15px;
 
   font-family: Titan One;
   font-style: normal;
@@ -37,7 +37,7 @@
 }
 
 .products__header {
-  padding-bottom: 31px;
+  margin-bottom: 31px;
 
   font-family: Titan One;
   font-style: normal;
@@ -53,6 +53,7 @@
   @media screen and (min-width: 768px) {
     padding-bottom: 39px;
 
+    font-size: 48px;
     line-height: 1.15;
     letter-spacing: 0.04em;
   }
