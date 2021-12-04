@@ -1,0 +1,116 @@
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0px;
+  padding: 0px;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+.gallery {
+  background-image: linear-gradient(
+    to bottom,
+    #FFF5F6 30%,
+    #ffffff 30%
+  );
+  padding-bottom: 80px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 121px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 123px;
+  }
+}
+
+.gallery__list {
+  display: flex;
+  justify-content: center;
+}
+.gallery__item {
+  padding: 0 2px;
+  
+}
+.gallery__img {
+  border-radius: 5px;
+  margin: 4px 0;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  transform: scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    transform: scale(1.2);
+    position: relative;
+    z-index: 1;
+  }
+  @media screen and (min-width: 768px) {
+    border-radius: 12px;
+    width: 85px;
+    height: 85px;
+  }
+  @media screen and (min-width: 1280px) {
+    border-radius: 20px;
+    width: 140px;
+    height: 140px;
+  }
+}
+.gallery__img--big {
+  width: 80px;
+  height: 80px;
+  @media screen and (min-width: 768px) {
+    width: 175px;
+    height: 175px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 280px;
+    height: 280px;
+  }
+}
+.gallery__item--1 {
+  padding-top: 40px;
+  @media screen and (min-width: 768px) {
+    padding-top: 80px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 140px;
+  }
+}
+.gallery__item--2 {
+  padding-top: 25px;
+  @media screen and (min-width: 768px) {
+    padding-top: 55px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 90px;
+  }
+}
+.gallery__item--3 {
+  padding-top: 30px;
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 100px;
+  }
+}
+.gallery__item--4 {
+  padding-top: 15px;
+  @media screen and (min-width: 768px) {
+    padding-top: 35px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 50px;
+  }
+}
+.gallery__item--5 {
+  padding-top: 45px;
+  @media screen and (min-width: 768px) {
+    padding-top: 95px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 155px;
+  }
+}
