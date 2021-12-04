@@ -1,0 +1,103 @@
+<div class="backdrop backdrop--hidden" id="backdrop" data-modal>
+  <button class="backdrop__button" data-modal-close type="button">
+    <svg class="backdrop__icon" width="30" height="30">
+      <use href="./images/icons.svg#icon-close"></use>
+    </svg>
+    <span class="backdrop__label visually-hidden">Close</span>
+  </button>
+  <div class="modal" id="modal">
+    <form class="form modal__form" autocomplete="on" id="form">
+      <div class="form__group" role="group" aria-labelledby="form-details">
+        <h2 class="form__title" id="form-details">Please place Your order here</h2>
+        <input
+          class="form__input"
+          id="form-mail"
+          type="email"
+          name="mail"
+          placeholder="Your E-mail"
+        />
+        <div class="form__field">
+          <input
+            class="form__input"
+            id="form-name"
+            type="text"
+            name="name"
+            placeholder="First Name"
+          />
+          <input
+            class="form__input"
+            id="form-name"
+            type="text"
+            name="name"
+            placeholder="Last Name"
+          />
+        </div>
+        <input
+          class="form__input"
+          id="form-phone"
+          type="tel"
+          name="phone"
+          placeholder="Phone Number"
+        />
+        <div class="form__products" id="form__products">
+          <p class="form__caption">Choose products to order:</p>
+          <div class="form__field form__product">
+            <select class="form__input" id="form-product" name="product-1">
+              <option value="ice-cream" selected>Ice Cream</option>
+              <option value="ice-coffee">Ice Coffee</option>
+              <option value="milkshake">Milkshake</option>
+            </select>
+            <select class="form__input" id="form-flavour" name="flavour-1">
+              <option value="chocolate" selected>Chocolate</option>
+              <option value="vanilla">Vanilla</option>
+              <option value="milk">Milk</option>
+              <option value="cookies-n-cream">Cookies N' Cream</option>
+              <option value="mint-choc-chip">Mint Chocolate Chip</option>
+              <option value="choc-chip-cookie-dough">Chocolate Chip Cookie Dough</option>
+              <option value="buttered-pecan">Buttered Pecan</option>
+              <option value="strawberry">Strawberry</option>
+              <option value="neapolitan">Neapolitan</option>
+              <option value="pistachio">Pistachio</option>
+            </select>
+            <input
+              class="form__input"
+              id="form-quantity"
+              type="number"
+              name="quantity-1"
+              min="1"
+              max="100"
+              placeholder="Quantity"
+            />
+          </div>
+          <button class="button form__button" id="add-product" type="button">
+            Add more products
+          </button>
+        </div>
+        <input
+          class="form__input"
+          id="form-address"
+          type="text"
+          name="address"
+          placeholder="Address"
+        />
+        <input
+          class="form__input"
+          id="form-time"
+          type="datetime-local"
+          min="2021-12-04T12:00"
+          max="2021-12-27T00:00"
+          name="datetime"
+          placeholder="When"
+        />
+        <input
+          class="form__input"
+          id="form-comments"
+          type="text"
+          name="comments"
+          placeholder="Special instructions"
+        />
+      </div>
+      <button class="button form__button" type="submit">Submit</button>
+    </form>
+  </div>
+</div>
