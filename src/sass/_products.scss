@@ -2,11 +2,9 @@
   padding-bottom: 98px;
 
   @media screen and (min-width: 768px) {
-    padding-top: 122px;
     padding-bottom: 112px;
   }
   @media screen and (min-width: 1280px) {
-    padding-top: 127px;
     padding-bottom: 119px;
   }
 }
@@ -50,14 +48,14 @@
   color: #d41443;
 
   @media screen and (min-width: 768px) {
-    padding-bottom: 39px;
+    margin-bottom: 39px;
 
     font-size: 48px;
     line-height: 1.15;
     letter-spacing: 0.04em;
   }
   @media screen and (min-width: 1280px) {
-    padding-bottom: 49px;
+    margin-bottom: 49px;
 
     font-size: 58px;
     line-height: 1.14;
