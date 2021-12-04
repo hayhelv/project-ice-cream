@@ -1,7 +1,7 @@
 // add all the elements inside modal which you want to make focusable
 const  focusableElements =
     'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])';
-const modal = document.querySelector('#modal'); // select the modal by it's id
+const modal = document.querySelector('#backdrop'); // select the modal by it's id
 
 const firstFocusableElement = modal.querySelectorAll(focusableElements)[0]; // get first element to be focused inside modal
 const focusableContent = modal.querySelectorAll(focusableElements);
