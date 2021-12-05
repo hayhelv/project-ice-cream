@@ -9,7 +9,7 @@
                     <p class="products-list__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum
                         itaque
                         magni, illum molestiae exercitationem iusto ab perferendis aspernatur. Deserunt, amet!</p>
-                    <button class="products-list__btn" type="button"></button>
+                    <button class="products-list__btn" type="button" data-modal-open></button>
                 </div>
             </li>
             <li class="products-list__item">
@@ -18,7 +18,7 @@
                     <p class="products-list__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
                         iure
                         assumenda ducimus obcaecati sapiente inventore quia nobis doloribus natus rerum!</p>
-                    <button class="products-list__btn" type="button"></button>
+                    <button class="products-list__btn" type="button" data-modal-open-2></button>
                 </div>
             </li>
             <li class="products-list__item">
@@ -27,9 +27,72 @@
                     <p class="products-list__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
                         iure
                         assumenda ducimus obcaecati sapiente inventore quia nobis doloribus natus rerum!</p>
-                    <button class="products-list__btn" type="button"></button>
+                    <button class="products-list__btn" type="button" data-modal-open-3></button>
                 </div>
             </li>
         </ul>
     </div>
 </section>
+
+<!-- ===MODAL=== -->
+
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal modal--first">
+        <button class="modal__close-btn" data-modal-close>
+            <svg class="modal__icon-close" width="18" height="18" fill="#000000" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M15 4.108 13.892 3 9.5 7.392 5.108 3 4 4.108 8.392 8.5 4 12.892 5.108 14 9.5 9.608 13.892 14 15 12.892 10.608 8.5 15 4.108Z" />
+            </svg>
+        </button>
+        <p class="modal__title">ice cream</p>
+        <p class="modal__description">Ice cream is a sweetened frozen food typically eaten as a snack or dessert. It may
+            be made from dairy milk or
+            cream and
+            is flavoured with a sweetener, either sugar or an alternative, and a spice, such as cocoa or vanilla, or
+            with fruit such
+            as strawberries or peaches. It can also be made by whisking a flavored cream base and liquid nitrogen
+            together.
+            Colorings are sometimes added, in addition to stabilizers.</p>
+    </div>
+</div>
+
+<div class="backdrop is-hidden" data-modal-2>
+    <div class="modal modal--second">
+        <button class="modal__close-btn" data-modal-close-2>
+            <svg class="modal__icon-close" width="18" height="18" fill="#000000" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M15 4.108 13.892 3 9.5 7.392 5.108 3 4 4.108 8.392 8.5 4 12.892 5.108 14 9.5 9.608 13.892 14 15 12.892 10.608 8.5 15 4.108Z" />
+            </svg>
+        </button>
+        <p class="modal__title">ice coffee</p>
+        <p class="modal__description">Iced coffee is a coffee beverage served cold. It may be prepared either by brewing
+            coffee in the normal way and then
+            serving it over ice or in cold milk, or by brewing the coffee cold. In hot brewing, sweeteners and flavoring
+            may be
+            added before cooling, as they dissolve faster. Iced coffee can also be sweetened with pre-dissolved sugar in
+            water.</p>
+    </div>
+</div>
+
+<div class="backdrop is-hidden" data-modal-3>
+    <div class="modal modal--third">
+        <button class="modal__close-btn" data-modal-close-3>
+            <svg class="modal__icon-close" width="18" height="18" fill="#000000" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M15 4.108 13.892 3 9.5 7.392 5.108 3 4 4.108 8.392 8.5 4 12.892 5.108 14 9.5 9.608 13.892 14 15 12.892 10.608 8.5 15 4.108Z" />
+            </svg>
+        </button>
+        <p class="modal__title">milkshakes</p>
+        <p class="modal__description">A milkshake (sometimes simply called a shake) is a sweet drink made by blending
+            milk, ice cream, and flavorings or
+            sweeteners such as butterscotch, caramel sauce, chocolate syrup, fruit syrup, or whole fruit into a thick,
+            sweet, cold
+            mixture. It may also be made using a base made from non-dairy products, including plant milks such as almond
+            milk,
+            coconut milk, or soy milk.</p>
+    </div>
+</div>
+
+<script src="./js/modal.js"></script>
+<script src="./js/modal-2.js"></script>
+<script src="./js/modal-3.js"></script>
