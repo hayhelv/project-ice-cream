@@ -267,11 +267,10 @@
 .hero {
   background: #ffb8ca;
   position: relative;
-  height: 100vh;
-  min-width: 320px;
-  max-height: 502px;
+  padding-top: 193px;
+  padding-bottom: 160px;
   overflow: hidden;
-  margin: 0 auto;
+  // margin: 0 auto;
 
   @media screen and (min-width: 480px) {
     width: 480px;
@@ -286,51 +285,26 @@
   }
 
   &__title {
-    position: absolute;
-    top: 193px;
-    left: 20px;
-
-    font-family: Titan One;
-    font-style: normal;
-    font-weight: normal;
+    position: relative;
+    margin-bottom: 19px;
+    font-family: 'Titan One', cursive;
     font-size: 26px;
-    line-height: 30px;
+    line-height: 1.15;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    display: block;
-    z-index: 1;
+    z-index: 2;
 
     @media screen and (min-width: 768px) {
       top: 102px;
       left: 34px;
       font-size: 22px;
-      line-height: 25px;
+      line-height: 1.14;
     }
     @media screen and (min-width: 1280px) {
       top: 171px;
       left: 115px;
       font-size: 38px;
-      line-height: 44px;
-    }
-
-    .passion {
-      font-size: 48px;
-      line-height: 96.5%;
-      color: #d41443;
-      z-index: 1;
-
-      @media screen and (min-width: 768px) {
-        top: 102px;
-        left: 34px;
-        font-size: 34px;
-        line-height: 90.5%;
-      }
-      @media screen and (min-width: 1280px) {
-        top: 171px;
-        left: 115px;
-        font-size: 58px;
-        line-height: 90.5%;
-      }
+      line-height: 1.16;
     }
   }
   &__girl {
@@ -411,33 +385,40 @@
   }
 }
 
+.passion {
+  display: block;
+  font-size: 48px;
+  line-height: 0.965;
+  color: #d41443;
+  z-index: 1;
+
+  @media screen and (min-width: 768px) {
+    font-size: 34px;
+    line-height: 0.905;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 58px;
+  }
+}
+
 .anchor {
-  position: absolute;
-  top: 318px;
-  left: 20px;
   display: flex;
   align-items: center;
 
-  @media screen and (min-width: 768px) {
-    top: 202px;
-    left: 34px;
-  }
-  @media screen and (min-width: 1280px) {
-    top: 333px;
-    left: 115px;
-  }
-
   &__btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 14px;
     font-size: 8px;
-    line-height: 10px;
+    line-height: 1.25;
     border-radius: 20px;
     border: none;
-    z-index: 1;
+    z-index: 3;
   }
   &__products {
-    width: 62.4px;
-    height: 24px;
-    color: #fff;
+    color: #ffffff;
     background-color: #d41443;
     margin-right: 8px;
 
@@ -447,10 +428,8 @@
     }
   }
   &__made {
-    width: 82.8px;
-    height: 24px;
     color: #d41443;
-    background-color: #fff;
+    background-color: #ffffff;
 
     &:hover,
     &:focus {

@@ -1,6 +1,6 @@
 <header class="header">
   <div class="container up">
-    <a href="" class="up__logo">
+    <a href="#" class="up__logo">
       <picture>
         <source
           srcset="images/logo.webp 1x, images/logo2x.webp 2x, images/logo3x.webp 3x"
@@ -27,10 +27,10 @@
       <nav class="nav">
         <ul class="nav__list">
           <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
-          <li class="nav__item"><a class="nav__link" href="#">About us</a></li>
-          <li class="nav__item"><a class="nav__link" href="#">How it's made?</a></li>
-          <li class="nav__item"><a class="nav__link" href="#">Our products</a></li>
-          <li class="nav__item"><a class="nav__link" href="#">Contact</a></li>
+          <li class="nav__item"><a class="nav__link" href="#advantages">About us</a></li>
+          <li class="nav__item"><a class="nav__link" href="#about">How it's made?</a></li>
+          <li class="nav__item"><a class="nav__link" href="#products">Our products</a></li>
+          <li class="nav__item"><a class="nav__link" href="#contacts">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -48,7 +48,7 @@
           <use class="icon-menu" href="images/icons.svg#icon-burger"></use>
         </svg>
       </button>
-      <button class="buy buy--desktop" type="button" data-modal-open>
+      <button class="buy buy--desktop" type="button" data-modal-open0>
         Buy now
         <span>
           <svg class="buy__icon buy__icon--desktop" width="8" height="10">
@@ -61,256 +61,252 @@
 </header>
 <main>
   <section class="hero">
-    <h1 class="hero__title">
-      ice cream <br />
-      made with
-      <p class="passion">PASSION</p>
-    </h1>
-    <div class="anchor">
-      <button class="anchor__btn anchor__products" type="button">
-        <a href="#">Products</a>
-      </button>
-      <button class="anchor__btn anchor__made" type="button">
-        <a href="#">How it's made?</a>
-      </button>
+    <div class="container">
+      <h1 class="hero__title">
+        ice cream <br />
+        made with
+        <span class="passion">PASSION</span>
+      </h1>
+      <div class="anchor">
+        <a class="anchor__btn anchor__products" href="#products">Products</a>
+        <a class="anchor__btn anchor__made" href="#about">How it's made?</a>
+      </div>
+
+      <div class="discription">
+        <p class="discription__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et
+        </p>
+        <a href="">
+          <picture>
+            <source
+              srcset="
+                images/arrow-right3.webp   1x,
+                images/arrow-right32x.webp 2x,
+                images/arrow-right33x.webp 3x
+              "
+              type="image/webp"
+            />
+            <source
+              srcset="
+                images/arrow-right3.png   1x,
+                images/arrow-right32x.png 2x,
+                images/arrow-right33x.png 3x
+              "
+              type="image/png"
+            />
+            <img src="images/arrow-right3.png" alt="arrow-right3" />
+          </picture>
+        </a>
+      </div>
+
+      <div class="statistics">
+        <ul class="statistics__list">
+          <li class="statistics__item">
+            <svg class="statistics__icon">
+              <use href="images/icons.svg#icon-circle"></use>
+            </svg>
+
+            <p class="statistics__amount">16</p>
+            <p class="statistics__text">cafes</p>
+          </li>
+          <li class="statistics__item">
+            <svg class="statistics__icon">
+              <use href="images/icons.svg#icon-circle"></use>
+            </svg>
+
+            <p class="statistics__amount">23</p>
+            <p class="statistics__text">food trucks</p>
+          </li>
+        </ul>
+      </div>
+      <picture class="hero__girl">
+        <source
+          srcset="
+            images/slider-pic4-tab.webp   1x,
+            images/slider-pic4-tab2x.webp 2x,
+            images/slider-pic4-tab3x.webp 3x
+          "
+          media="(max-width: 1279px)"
+          type="image/webp"
+        />
+
+        <source
+          srcset="
+            images/slider-pic4-tab.png   1x,
+            images/slider-pic4-tab2x.png 2x,
+            images/slider-pic4-tab3x.png 3x
+          "
+          media="(max-width: 1279px)"
+          type="image/png"
+        />
+        <source
+          srcset="
+            images/slider-pic4-desktop.webp   1x,
+            images/slider-pic4-desktop2x.webp 2x,
+            images/slider-pic4-desktop3x.webp 3x
+          "
+          media="(min-width: 1280px)"
+          type="image/webp"
+        />
+
+        <source
+          srcset="
+            images/slider-pic4-desktop.png   1x,
+            images/slider-pic4-desktop2x.png 2x,
+            images/slider-pic4-desktop3x.png 3x
+          "
+          media="(min-width: 1280px)"
+          type="image/png"
+        />
+
+        <img src="images/slider-pic4-tab.png" alt="milk" />
+      </picture>
+
+      <picture class="hero__milk">
+        <source
+          srcset="
+            images/slider-pic5-tab.webp   1x,
+            images/slider-pic5-tab2x.webp 2x,
+            images/slider-pic5-tab3x.webp 3x
+          "
+          media="(max-width: 1279px)"
+          type="image/webp"
+        />
+
+        <source
+          srcset="
+            images/slider-pic5-tab.png   1x,
+            images/slider-pic5-tab2x.png 2x,
+            images/slider-pic5-tab3x.png 3x
+          "
+          media="(max-width: 1279px)"
+          type="image/png"
+        />
+        <source
+          srcset="
+            images/slider-pic5-desktop.webp   1x,
+            images/slider-pic5-desktop2x.webp 2x,
+            images/slider-pic5-desktop3x.webp 3x
+          "
+          media="(min-width: 1280px)"
+          type="image/webp"
+        />
+
+        <source
+          srcset="
+            images/slider-pic5-desktop.png   1x,
+            images/slider-pic5-desktop2x.png 2x,
+            images/slider-pic5-desktop3x.png 3x
+          "
+          media="(min-width: 1280px)"
+          type="image/png"
+        />
+
+        <img src="images/slider-pic5-tab.png" alt="milk" />
+      </picture>
+
+      <picture class="hero__elipse">
+        <source
+          srcset="
+            images/Ellipse3-tab.webp   1x,
+            images/Ellipse3-tab2x.webp 2x,
+            images/Ellipse3-tab3x.webp 3x
+          "
+          media="(max-width: 1279px)"
+          type="image/webp"
+        />
+        <source
+          srcset="
+            images/ellipse3-tab.png   1x,
+            images/ellipse3-tab2x.png 2x,
+            images/ellipse3-tab3x.png 3x
+          "
+          media="(max-width: 1279px)"
+          type="image/png"
+        />
+        <source
+          srcset="
+            images/Ellipse3-desktop.webp   1x,
+            images/Ellipse3-desktop2x.webp 2x,
+            images/Ellipse3-desktop3x.webp 3x
+          "
+          media="(min-width: 1280px)"
+          type="image/webp"
+        />
+        <source
+          srcset="
+            images/ellipse3-desktop.png   1x,
+            images/ellipse3-desktop2x.png 2x,
+            images/ellipse3-desktop3x.png 3x
+          "
+          media="(min-width: 1280px)"
+          type="image/png"
+        />
+        <img src="images/ellipse3-tab.png" alt="slider" />
+      </picture>
+
+      <picture class="hero__ice">
+        <source
+          srcset="
+            images/slider-pic7-mob.webp   1x,
+            images/slider-pic7-mob2x.webp 2x,
+            images/slider-pic7-mob3x.webp 3x
+          "
+          media="(max-width: 767px)"
+          type="image/webp"
+        />
+
+        <source
+          srcset="
+            images/slider-pic7-mob.png   1x,
+            images/slider-pic7-mob2x.png 2x,
+            images/slider-pic7-mob3x.png 3x
+          "
+          media="(max-width: 767px)"
+          type="image/png"
+        />
+        <source
+          srcset="
+            images/slider-pic7-tab.webp   1x,
+            images/slider-pic7-tab2x.webp 2x,
+            images/slider-pic7-tab3x.webp 3x
+          "
+          media="(max-width: 1279px)"
+          type="image/webp"
+        />
+
+        <source
+          srcset="
+            images/slider-pic7-tab.png   1x,
+            images/slider-pic7-tab2x.png 2x,
+            images/slider-pic7-tab3x.png 3x
+          "
+          media="(max-width: 1279px)"
+          type="image/png"
+        />
+        <source
+          srcset="
+            images/slider-pic7-desktop.webp   1x,
+            images/slider-pic7-desktop2x.webp 2x,
+            images/slider-pic7-desktop3x.webp 3x
+          "
+          media="(min-width: 1280px)"
+          type="image/webp"
+        />
+
+        <source
+          srcset="
+            images/slider-pic7-desktop.png   1x,
+            images/slider-pic7-desktop2x.png 2x,
+            images/slider-pic7-desktop3x.png 3x
+          "
+          media="(min-width: 1280px)"
+          type="image/png"
+        />
+
+        <img src="images/slider-pic7-mob.png" alt="slider" />
+      </picture>
     </div>
-
-    <div class="discription">
-      <p class="discription__text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et
-      </p>
-      <a href="">
-        <picture>
-          <source
-            srcset="
-              images/arrow-right3.webp   1x,
-              images/arrow-right32x.webp 2x,
-              images/arrow-right33x.webp 3x
-            "
-            type="image/webp"
-          />
-          <source
-            srcset="
-              images/arrow-right3.png   1x,
-              images/arrow-right32x.png 2x,
-              images/arrow-right33x.png 3x
-            "
-            type="image/png"
-          />
-          <img src="images/arrow-right3.png" alt="arrow-right3" />
-        </picture>
-      </a>
-    </div>
-
-    <div class="statistics">
-      <ul class="statistics__list">
-        <li class="statistics__item">
-                    <svg class="statistics__icon">
-            <use href="images/icons.svg#icon-circle"></use>
-          </svg>
-
-          <p class="statistics__amount">16</p>
-          <p class="statistics__text">cafes</p>
-        </li>
-        <li class="statistics__item">
-                    <svg class="statistics__icon">
-            <use href="images/icons.svg#icon-circle"></use>
-          </svg>
-
-          <p class="statistics__amount">23</p>
-          <p class="statistics__text">food trucks</p>
-        </li>
-
-    </ul>
-
-    </div>
-    <picture class="hero__girl">
-      <source
-        srcset="
-          images/slider-pic4-tab.webp   1x,
-          images/slider-pic4-tab2x.webp 2x,
-          images/slider-pic4-tab3x.webp 3x
-        "
-        media="(max-width: 1279px)"
-        type="image/webp"
-      />
-
-      <source
-        srcset="
-          images/slider-pic4-tab.png   1x,
-          images/slider-pic4-tab2x.png 2x,
-          images/slider-pic4-tab3x.png 3x
-        "
-        media="(max-width: 1279px)"
-        type="image/png"
-      />
-      <source
-        srcset="
-          images/slider-pic4-desktop.webp   1x,
-          images/slider-pic4-desktop2x.webp 2x,
-          images/slider-pic4-desktop3x.webp 3x
-        "
-        media="(min-width: 1280px)"
-        type="image/webp"
-      />
-
-      <source
-        srcset="
-          images/slider-pic4-desktop.png   1x,
-          images/slider-pic4-desktop2x.png 2x,
-          images/slider-pic4-desktop3x.png 3x
-        "
-        media="(min-width: 1280px)"
-        type="image/png"
-      />
-
-      <img src="images/slider-pic4-tab.png" alt="milk" />
-    </picture>
-
-    <picture class="hero__milk">
-      <source
-        srcset="
-          images/slider-pic5-tab.webp   1x,
-          images/slider-pic5-tab2x.webp 2x,
-          images/slider-pic5-tab3x.webp 3x
-        "
-        media="(max-width: 1279px)"
-        type="image/webp"
-      />
-
-      <source
-        srcset="
-          images/slider-pic5-tab.png   1x,
-          images/slider-pic5-tab2x.png 2x,
-          images/slider-pic5-tab3x.png 3x
-        "
-        media="(max-width: 1279px)"
-        type="image/png"
-      />
-      <source
-        srcset="
-          images/slider-pic5-desktop.webp   1x,
-          images/slider-pic5-desktop2x.webp 2x,
-          images/slider-pic5-desktop3x.webp 3x
-        "
-        media="(min-width: 1280px)"
-        type="image/webp"
-      />
-
-      <source
-        srcset="
-          images/slider-pic5-desktop.png   1x,
-          images/slider-pic5-desktop2x.png 2x,
-          images/slider-pic5-desktop3x.png 3x
-        "
-        media="(min-width: 1280px)"
-        type="image/png"
-      />
-
-      <img src="images/slider-pic5-tab.png" alt="milk" />
-    </picture>
-
-    <picture class="hero__elipse">
-      <source
-        srcset="
-          images/Ellipse3-tab.webp   1x,
-          images/Ellipse3-tab2x.webp 2x,
-          images/Ellipse3-tab3x.webp 3x
-        "
-        media="(max-width: 1279px)"
-        type="image/webp"
-      />
-      <source
-        srcset="
-          images/ellipse3-tab.png   1x,
-          images/ellipse3-tab2x.png 2x,
-          images/ellipse3-tab3x.png 3x
-        "
-        media="(max-width: 1279x)"
-        type="image/png"
-      />
-      <source
-        srcset="
-          images/Ellipse3-desktop.webp   1x,
-          images/Ellipse3-desktop2x.webp 2x,
-          images/Ellipse3-desktop3x.webp 3x
-        "
-        media="(min-width: 1280px)"
-        type="image/webp"
-      />
-      <source
-        srcset="
-          images/ellipse3-desktop.png   1x,
-          images/ellipse3-desktop2x.png 2x,
-          images/ellipse3-desktop3x.png 3x
-        "
-        media="(min-width: 1280px)"
-        type="image/png"
-      />
-      <img src="images/ellipse3-tab.png" alt="slider" />
-    </picture>
-
-    <picture class="hero__ice">
-      <source
-        srcset="
-          images/slider-pic7-mob.webp   1x,
-          images/slider-pic7-mob2x.webp 2x,
-          images/slider-pic7-mob3x.webp 3x
-        "
-        media="(max-width: 767px)"
-        type="image/webp"
-      />
-
-      <source
-        srcset="
-          images/slider-pic7-mob.png   1x,
-          images/slider-pic7-mob2x.png 2x,
-          images/slider-pic7-mob3x.png 3x
-        "
-        media="(max-width: 767px)"
-        type="image/png"
-      />
-      <source
-        srcset="
-          images/slider-pic7-tab.webp   1x,
-          images/slider-pic7-tab2x.webp 2x,
-          images/slider-pic7-tab3x.webp 3x
-        "
-        media="(max-width: 1279px)"
-        type="image/webp"
-      />
-
-      <source
-        srcset="
-          images/slider-pic7-tab.png   1x,
-          images/slider-pic7-tab2x.png 2x,
-          images/slider-pic7-tab3x.png 3x
-        "
-        media="(max-width: 1279px)"
-        type="image/png"
-      />
-      <source
-        srcset="
-          images/slider-pic7-desktop.webp   1x,
-          images/slider-pic7-desktop2x.webp 2x,
-          images/slider-pic7-desktop3x.webp 3x
-        "
-        media="(min-width: 1280px)"
-        type="image/webp"
-      />
-
-      <source
-        srcset="
-          images/slider-pic7-desktop.png   1x,
-          images/slider-pic7-desktop2x.png 2x,
-          images/slider-pic7-desktop3x.png 3x
-        "
-        media="(min-width: 1280px)"
-        type="image/png"
-      />
-
-      <img src="images/slider-pic7-mob.png" alt="slider" />
-    </picture>
-  </div>
+  </section>
 </main>
