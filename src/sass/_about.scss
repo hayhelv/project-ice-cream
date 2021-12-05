@@ -154,6 +154,32 @@
   line-height: 1.9;
 
   color: #907e82;
+  margin-bottom: 12px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.04em;
+    margin-bottom: 35px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.9;
+    color: #907e82;
+  }
+}
+
+.about-content__item-b--three {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.9;
+
+  color: #907e82;
 
   @media screen and (min-width: 768px) {
     font-size: 14px;
