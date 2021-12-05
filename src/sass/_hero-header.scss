@@ -57,12 +57,12 @@
     display: none;
   }
 
-  // &:hover,
-  // &:focus {
-  //   .icon-menu {
-  //     stroke: #fff;
-  //   }
-  // }
+  &:hover,
+  &:focus {
+    .icon-menu {
+      stroke: #fff;
+    }
+  }
 
   .icon-menu {
     stroke: #d41443;
@@ -348,6 +348,11 @@
     background-color: #d41443;
 
     margin-right: 8px;
+
+    &:hover,
+    &:focus {
+      background-color: #c7133e;
+    }
   }
   &__made {
     width: 82.8px;
@@ -356,9 +361,44 @@
     color: #d41443;
 
     background-color: #fff;
+
+    &:hover,
+    &:focus {
+      background-color: #ecebeb;
+    }
   }
 
   &__link {
     text-decoration: none;
+  }
+}
+
+.discription {
+  position: absolute;
+  top: 292px;
+  left: 154px;
+  width: 114px;
+  z-index: 1;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1280px) {
+    top: 485px;
+    left: 295px;
+    width: 200px;
+  }
+
+  &__text {
+    font-size: 8px;
+    line-height: 150%;
+    color: #ffffff;
+    margin-bottom: 7px;
+
+    @media screen and (min-width: 1280px) {
+      font-size: 14px;
+      line-height: 140%;
+      margin-bottom: 20px;
+    }
   }
 }

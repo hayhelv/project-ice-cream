@@ -74,11 +74,32 @@
       </button>
     </div>
 
-    <div class="text">
-      <p>
+    <div class="discription">
+      <p class="discription__text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
         labore et
       </p>
+      <a href="">
+        <picture>
+          <source
+            srcset="
+              images/arrow-right3.webp   1x,
+              images/arrow-right32x.webp 2x,
+              images/arrow-right33x.webp 3x
+            "
+            type="image/webp"
+          />
+          <source
+            srcset="
+              images/arrow-right3.png   1x,
+              images/arrow-right32x.png 2x,
+              images/arrow-right33x.png 3x
+            "
+            type="image/png"
+          />
+          <img src="images/arrow-right3.png" alt="arrow-right3" />
+        </picture>
+      </a>
     </div>
 
     <picture class="hero__elipse">
@@ -88,6 +109,7 @@
           images/Ellipse3-tab2x.webp 2x,
           images/Ellipse3-tab3x.webp 3x
         "
+        media="(max-width: 1279px)"
         type="image/webp"
       />
       <source
@@ -96,6 +118,7 @@
           images/ellipse3-tab2x.png 2x,
           images/ellipse3-tab3x.png 3x
         "
+        media="(max-width: 1279x)"
         type="image/png"
       />
       <source
@@ -104,7 +127,7 @@
           images/Ellipse3-desktop2x.webp 2x,
           images/Ellipse3-desktop3x.webp 3x
         "
-        media="(min-width= 1280px)"
+        media="(min-width: 1280px)"
         type="image/webp"
       />
       <source
@@ -113,10 +136,10 @@
           images/ellipse3-desktop2x.png 2x,
           images/ellipse3-desktop3x.png 3x
         "
-        media="(min-width= 1280px)"
+        media="(min-width: 1280px)"
         type="image/png"
       />
-      <img src="images/slider-pic7-desktop.png" alt="slider" />
+      <img src="images/Ellipse3-tab.png" alt="slider" />
     </picture>
 
     <picture class="hero__ice">
@@ -126,6 +149,7 @@
           images/slider-pic7-mob2x.webp 2x,
           images/slider-pic7-mob3x.webp 3x
         "
+        media="(max-width: 767px)"
         type="image/webp"
       />
 
@@ -135,6 +159,7 @@
           images/slider-pic7-mob2x.png 2x,
           images/slider-pic7-mob3x.png 3x
         "
+        media="(max-width: 767px)"
         type="image/png"
       />
       <source
@@ -143,7 +168,7 @@
           images/slider-pic7-tab2x.webp 2x,
           images/slider-pic7-tab3x.webp 3x
         "
-        media="(min-width= 768px)"
+        media="(max-width: 1279px)"
         type="image/webp"
       />
 
@@ -153,7 +178,7 @@
           images/slider-pic7-tab2x.png 2x,
           images/slider-pic7-tab3x.png 3x
         "
-        media="(min-width= 768px)"
+        media="(max-width: 1279px)"
         type="image/png"
       />
       <source
@@ -162,7 +187,7 @@
           images/slider-pic7-desktop2x.webp 2x,
           images/slider-pic7-desktop3x.webp 3x
         "
-        media="(min-width= 1280px)"
+        media="(min-width: 1280px)"
         type="image/webp"
       />
 
@@ -172,7 +197,7 @@
           images/slider-pic7-desktop2x.png 2x,
           images/slider-pic7-desktop3x.png 3x
         "
-        media="(min-width= 1280px)"
+        media="(min-width: 1280px)"
         type="image/png"
       />
 
