@@ -65,7 +65,7 @@
   padding: 43px 20px;
 
   width: 220px;
-  background-color: #fff;
+  background-color: #ffffff;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
 
@@ -366,29 +366,29 @@
 }
 
 .contacts__icon-active {
-  stroke: #fff;
+  stroke: currentColor;
 
-  transition: stroke 250ms linear;
+  // transition: stroke 250ms linear;
 
   &:hover,
   &:focus {
-    stroke: #d41342;
+    stroke: currentColor;
   }
 }
 
 .contacts__icon-primary {
-  margin-left: 8px;
+  margin-left: 13px;
 
-  width: 7px;
+  width: 8px;
   height: 10px;
 }
 
 .contacts__icon-secondary {
   margin-left: 13px;
 
-  width: 7px;
+  width: 8px;
   height: 10px;
-  stroke: #d41443;
+  stroke: currentColor;
 }
 
 .contacts__btn {
