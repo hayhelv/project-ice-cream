@@ -1,21 +1,54 @@
 .about {
   background-color: #fff5f6;
-  // padding-top: 189px;
+  padding-top: 189px;
   padding-bottom: 39px;
 
-  @media screen and (min-width: 768px) {
-    // padding-top: 130px;
-    padding-bottom: 66px;
+  @media screen and (max-width: 767px) {
+    background-image: url('../images/sectionbg1-mob.png');
+    background-position: 50% 89%;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/sectionbg1-mob@2x.png');
+    }
+
+    @media screen and (min-device-pixel-ratio: 3),
+      (min-resolution: 288dpi),
+      (min-resolution: 3dppx) {
+      background-image: url('../images/sectionbg1-mob@3x.png');
+    }
   }
 
+  @media screen and (min-width: 768px) {
+    padding-top: 130px;
+    padding-bottom: 66px;
+  }
   @media screen and (min-width: 1280px) {
-    // padding-top: 125px;
+    padding-top: 125px;
     padding-bottom: 65px;
+    background-image: url('../images/sectionbg1-desktop.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/sectionbg1-desktop@2x.png');
+    }
+    @media screen and (min-device-pixel-ratio: 3),
+      (min-resolution: 288dpi),
+      (min-resolution: 3dppx) {
+      background-image: url('../images/sectionbg1-desktop@3x.png');
+    }
   }
 }
 
 .about__labe {
-  font-family: Titan One;
+  font-family: 'Titan One', cursive;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -43,7 +76,7 @@
 }
 
 .about__tittle {
-  font-family: Titan One;
+  font-family: 'Titan One', cursive;
   font-style: normal;
   font-weight: 400;
   font-size: 34px;
@@ -112,7 +145,7 @@
 }
 
 .about-content__item-b {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 62px;
@@ -124,7 +157,7 @@
 }
 
 .about-content__item-a--one {
-  font-family: DM Sans;
+  font-family: 'DM Sans', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -139,7 +172,7 @@
   @media screen and (min-width: 1280px) {
     font-size: 16px;
     letter-spacing: 0.04em;
-    font-family: DM Sans;
+    font-family: 'DM Sans', sans-serif;
     font-style: normal;
     font-weight: 500;
     color: #000000;
@@ -147,7 +180,7 @@
 }
 
 .about-content__item-b--two {
-  font-family: DM Sans;
+  font-family: 'DM Sans', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -164,7 +197,7 @@
   }
 
   @media screen and (min-width: 1280px) {
-    font-family: DM Sans;
+    font-family: 'DM Sans', sans-serif;
     font-style: normal;
     font-weight: 500;
     line-height: 1.9;
@@ -173,7 +206,7 @@
 }
 
 .about-content__item-b--three {
-  font-family: DM Sans;
+  font-family: 'DM Sans', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -188,7 +221,7 @@
   }
 
   @media screen and (min-width: 1280px) {
-    font-family: DM Sans;
+    font-family: 'DM Sans', sans-serif;
     font-style: normal;
     font-weight: 500;
     line-height: 1.9;
@@ -226,7 +259,7 @@
   border-radius: 22px;
   border: none;
 
-  font-family: DM Sans;
+  font-family: 'DM Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -251,33 +284,4 @@
   stroke: #d41443;
   margin-left: 13px;
   align-items: center;
-}
-
-.overlay-mob {
-  @media screen and (max-width: 480px) {
-    // width: 100%;
-    background-image: url(../images/sectionbg1-mob.png);
-
-    background-position: 50% 89%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    @media screen and (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/sectionbg1-mob2x.png);
-    }
-  }
-
-  @media screen and (min-width: 1200px) {
-    background-image: url(../images/sectionbg1-desktop.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: bottom;
-
-    @media screen and (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/sectionbg1-desktop2x.png);
-    }
-  }
 }
