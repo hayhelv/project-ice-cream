@@ -69,6 +69,14 @@
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
 
+  transition: transform 250ms linear;
+
+  &:hover {
+    transform: scale(1.2);
+    position: relative;
+    z-index: 1;
+  }
+
   &:not(:last-child) {
     @media screen and (max-width: 767px) {
       margin-bottom: 20px;
@@ -288,10 +296,14 @@
   border-radius: 22px;
   border: none;
 
-  transition: background-color 250ms linear, color 250ms linear;
+  transition: background-color 250ms linear, color 250ms linear, transform 250ms linear;
 
   &:hover,
   &:focus {
+    transform: scale(1.2);
+    position: relative;
+    z-index: 1;
+
     color: #d41342;
     background: #ffffff;
   }
@@ -332,10 +344,14 @@
   border-radius: 22px;
   border: none;
 
-  transition: background-color 250ms linear, color 250ms linear;
+  transition: background-color 250ms linear, color 250ms linear, transform 250ms linear;
 
   &:hover,
   &:focus {
+    transform: scale(1.2);
+    position: relative;
+    z-index: 1;
+
     color: #d41342;
     background: #ecebeb;
   }
@@ -386,4 +402,165 @@
     display: flex;
     justify-content: center;
   }
+}
+
+// -------------MODAL FIRST-------------
+
+.backdrop__map {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  overflow: auto;
+  background-color: rgb(255, 245, 246, 0.7);
+  background-image: linear-gradient(to right, rgb(255, 165, 186, 0.5), rgb(255, 165, 186, 0.5)),
+    url(../images/ice-cream-modal.jpg);
+  opacity: 1;
+  transition: opacity 250ms linear;
+}
+
+.backdrop__map.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.backdrop__map.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.8);
+  opacity: 0;
+}
+
+.contacts__modal-map {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+  width: 95%;
+  height: 80%;
+  background-color: #ffb8ca;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  transition: transform 250ms linear, opacity 250ms linear;
+}
+
+.modal__map {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 93%;
+  height: 88%;
+  border-radius: 10px;
+  border: none;
+
+  @media screen and (max-width: 767px) {
+    height: 83%;
+  }
+
+  @media screen and (min-width: 768px) {
+    height: 85%;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 95%;
+  }
+}
+
+.btn__map {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  line-height: 0;
+  z-index: 11;
+  background-color: #ffb8ca;
+
+  transition: background-color 250ms linear;
+
+  &:hover,
+  &:focus {
+    background-color: #d41443;
+  }
+
+  @media screen and (max-width: 767px) {
+    top: 5px;
+    right: 10px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    top: 10px;
+    right: 10px;
+  }
+}
+
+.btn__icon {
+  width: 25px;
+  height: 25px;
+  fill: #d41443;
+
+  transition: fill 250ms linear;
+
+  &:hover,
+  &:focus {
+    fill: #ffb8ca;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 28px;
+    height: 28px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 34px;
+    height: 34px;
+  }
+}
+
+// -------------MODAL SECOND-------------
+
+.backdrop__map-second {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  overflow: auto;
+  background-color: rgb(255, 245, 246, 0.7);
+  background-image: linear-gradient(to right, rgb(255, 165, 186, 0.5), rgb(255, 165, 186, 0.5)),
+    url(../images/ice-cream-background.jpg);
+  opacity: 1;
+  transition: opacity 250ms linear;
+}
+
+.backdrop__map-second.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.backdrop__map-second.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.8);
+  opacity: 0;
+}
+
+.contacts__modal-map {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+  width: 95%;
+  height: 80%;
+  background-color: #ffb8ca;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  transition: transform 250ms linear, opacity 250ms linear;
 }

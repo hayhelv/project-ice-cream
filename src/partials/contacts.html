@@ -68,14 +68,14 @@
         </ul>
         <div class="contacts__btn">
             <div class="contacts__icon-active">
-        <button class="contacts__btn-primary" type="button" data-modal-open>Our Locations
+        <button class="contacts__btn-primary" type="button" data-modal-map-first-open>Our Locations
                 <svg class="contacts__icon-primary">
                     <use href="./images/icons.svg#icon-greater-than"></use>
                 </svg>
             </div>
         </button>
         <div class="contacts__icon-focused">
-        <button class="contacts__btn-secondary" type="button">Franchise
+        <button class="contacts__btn-secondary" type="button" data-modal-map-second-open>Franchise
             <svg class="contacts__icon-secondary">
                 <use href="./images/icons.svg#icon-greater-than"></use>
             </svg>
@@ -84,3 +84,31 @@
         </div>
     </div>
 </section>
+
+<!-- MODAL FIRST ---------->
+<div class="backdrop__map is-hidden" data-modal-map-first>
+    <div class="contacts__modal-map">
+        <iframe class="modal__map"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2512.746953557614!2d5.499518974034533!3d50.965382613500594!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c0ded35db20eb1%3A0x6f7e967f8838626e!2sJoeyz%20Ice%20Cream!5e0!3m2!1suk!2sua!4v1638701765798!5m2!1suk!2sua"
+            allowfullscreen="" loading="lazy"></iframe>
+        <button class="btn__map" type="submit" data-modal-map-first-close>
+            <svg class="btn__icon">
+                <use href="./images/icons.svg#icon-map-close"></use>
+            </svg>
+        </button>
+    </div>
+</div>
+
+<!-- MODAL SECOND -->
+<div class="backdrop__map-second is-hidden" data-modal-map-second>
+    <div class="contacts__modal-map">
+        <iframe class="modal__map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2503.26059686273!2d-0.4860795444580076!3d51.14054536091847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4875c4893f26a7af%3A0x24445edd14588b84!2sMoooh%20Ice%20Cream!5e0!3m2!1suk!2sua!4v1638706693224!5m2!1suk!2sua"
+            allowfullscreen="" loading="lazy"></iframe>
+        <button class="btn__map" type="submit" data-modal-map-second-close>
+            <svg class="btn__icon">
+                <use href="./images/icons.svg#icon-map-close"></use>
+            </svg>
+        </button>
+    </div>
+</div>

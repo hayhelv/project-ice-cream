@@ -35,5 +35,8 @@
 <symbol id="icon-greater-than" viewBox="0 0 32 32" width="32" height="32" fill="none">
 <path d="m1.616 1 4.428 4-4.428 4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </symbol>
+<symbol id="icon-map-close" version="1.1" viewBox="0 0 612 792"> 
+<path d="M562,396c0-141.4-114.6-256-256-256S50,254.6,50,396s114.6,256,256,256S562,537.4,562,396L562,396z M356.8,396   L475,514.2L424.2,565L306,446.8L187.8,565L137,514.2L255.2,396L137,277.8l50.8-50.8L306,345.2L424.2,227l50.8,50.8L356.8,396   L356.8,396z"/>
+</symbol>
 </defs>
 </svg>
