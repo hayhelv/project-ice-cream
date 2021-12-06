@@ -1,6 +1,83 @@
 <header class="header">
   <div class="container">
-    <div class="up">
+    <div class="menu">
+      <div class="menu__mobile">
+        <a class="logo" href="#">
+          <picture>
+            <source
+              srcset="images/logo.webp 1x, images/logo2x.webp 2x, images/logo3x.webp 3x"
+              type="image/webp"
+            />
+            <source
+              srcset="images/logo.png 1x, images/logo2x.png 2x, images/logo3x.png 3x"
+              type="image/png"
+            />
+            <img src="images/logo.png" alt="Logo" width="199" height="50" />
+          </picture>
+        </a>
+        <button
+          class="menu__button menu__button--open js-open-menu"
+          type="button"
+          aria-expanded="false"
+        >
+          <svg
+            class="menu__icon"
+            width="20"
+            height="20"
+            aria-label="Переключатель мобильного меню"
+            aria-controls="menu__container"
+          >
+            <use href="images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="menu__overlay js-menu-container">
+        <div class="menu__container" id="menu__container">
+          <button
+            class="menu__button menu__button--close js-close-menu"
+            type="button"
+            aria-expanded="false"
+          >
+            <svg
+              class="menu__icon"
+              width="14"
+              height="14"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use href="images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <button class="menu__button menu__button--buy" type="button" data-modal-open0>
+            Buy now<svg class="menu__icon menu__icon--buy" width="8" height="10">
+              <use href="images/icons.svg#icon-greater-than"></use>
+            </svg>
+          </button>
+          <nav class="navigation">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="#about-us" class="menu__link menu__link--highlighted">Home</a>
+              </li>
+              <li class="menu__item">
+                <a href="#advantages" class="menu__link">About us</a>
+              </li>
+              <li class="menu__item">
+                <a href="#about" class="menu__link">How it’s made?</a>
+              </li>
+              <li class="menu__item">
+                <a href="#products" class="menu__link">Our products</a>
+              </li>
+              <li class="menu__item">
+                <a href="#contacts" class="menu__link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- <div class="up">
       <a href="#" class="up__logo">
         <picture>
           <source
@@ -58,7 +135,7 @@
       </div>
     </div>
   </div>
-</header>
+</header> -->
 <main>
   <section class="hero">
     <div class="container">
