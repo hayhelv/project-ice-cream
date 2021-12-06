@@ -3,7 +3,7 @@
     const openMenuBtn = document.querySelector('.js-open-menu');
     const closeMenuBtn = document.querySelector('.js-close-menu');
     const menuNavigation = document.querySelector('.navigation');
-    const menuAppointment = document.querySelector('.menu__link');
+    const buyNow = document.querySelector('.menu__button--buy');
 
     const toggleMenu = () => {
         const isMenuOpen =
@@ -11,16 +11,16 @@
         openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
         mobileMenu.classList.toggle('is-open');
 
-        const scrollLockMethod = !isMenuOpen
-            ? 'disableBodyScroll'
-            : 'enableBodyScroll';
-        bodyScrollLock[scrollLockMethod](document.body);
+        // const scrollLockMethod = !isMenuOpen
+        //     ? 'disableBodyScroll'
+        //     : 'enableBodyScroll';
+        // bodyScrollLock[scrollLockMethod](document.body);
     };
 
     openMenuBtn.addEventListener('click', toggleMenu);
     closeMenuBtn.addEventListener('click', toggleMenu);
     menuNavigation.addEventListener('click', toggleMenu);
-    menuAppointment.addEventListener('click', toggleMenu);
+    buyNow.addEventListener('click', toggleMenu);
 
     // Закрываем мобильное меню на более широких экранах
     // в случае изменения ориентации устройства.
