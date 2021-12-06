@@ -10,6 +10,7 @@
   transform: translateX(-50%);
   margin-right: 0;
   margin-left: 0;
+  
 
   // @media screen and (min-width: 1280px) {
   //   width: 1280px;
@@ -43,6 +44,7 @@
   }
 
   &__logo {
+    
     @media screen and (min-width: 1280px) {
       margin-left: -70px;
       margin-right: 110px;
@@ -263,6 +265,10 @@
       line-height: 21px;
     }
   }
+}
+.nav__link--current {
+  color: #D41443;
+;
 }
 
 // HERO SECTION
