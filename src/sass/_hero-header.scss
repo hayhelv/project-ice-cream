@@ -12,8 +12,10 @@
 }
 
 .menu {
-  @media screen and (min-winth: 1280px) {
+  @media screen and (min-width: 1280px) {
     display: flex;
+    align-items: center;
+    gap: 110px;
   }
 }
 
@@ -22,7 +24,7 @@
   justify-content: space-between;
   align-items: center;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     justify-content: end;
     gap: 25px;
   }
