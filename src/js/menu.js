@@ -3,18 +3,18 @@
     const openMenuBtn = document.querySelector('.js-open-menu');
     const closeMenuBtn = document.querySelector('.js-close-menu');
     const menuNavigation = document.querySelector('.navigation');
-    const buyNow = document.querySelector('.menu__button--buy');
+    const buyNow = document.querySelector('.menu__button--mobile');
 
     const toggleMenu = () => {
-        const isMenuOpen =
-            openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
-        openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
-        mobileMenu.classList.toggle('is-open');
+      const isMenuOpen =
+        openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
+      openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
+      mobileMenu.classList.toggle('is-open');
 
-        // const scrollLockMethod = !isMenuOpen
-        //     ? 'disableBodyScroll'
-        //     : 'enableBodyScroll';
-        // bodyScrollLock[scrollLockMethod](document.body);
+      // const scrollLockMethod = !isMenuOpen
+      //     ? 'disableBodyScroll'
+      //     : 'enableBodyScroll';
+      // bodyScrollLock[scrollLockMethod](document.body);
     };
 
     openMenuBtn.addEventListener('click', toggleMenu);
