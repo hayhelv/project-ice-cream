@@ -14,13 +14,14 @@
     mobileMenuRef.classList.toggle("is-open");
   });
   const toggleMenu = () => {
-        const isMenuOpen =
-        mobileMenuRef.classList.toggle('is-open');
-        const scrollLockMethod = !isMenuOpen
-            ? 'disableBodyScroll'
-            : 'enableBodyScroll';
-        bodyScrollLock[scrollLockMethod](document.body);
-    };
+    const isMenuOpen =
+      menuBtnRef.classList.toggle("is-open");
+      menuBtnRef.setAttribute("aria-expanded", !expanded);
+      const scrollLockMethod = !isMenuOpen
+        ? 'disableBodyScroll'
+        : 'enableBodyScroll';
+      bodyScrollLock[scrollLockMethod](document.body);
+  };
 
   menuNavigation.addEventListener('click', toggleMenu);
   buyButton.addEventListener('click', toggleMenu);
@@ -33,5 +34,3 @@
   });
 
 })();
-
-
