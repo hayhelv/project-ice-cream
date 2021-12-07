@@ -156,7 +156,7 @@ body {
 
   &:hover,
   &:focus {
-    color: #d41443;
+    color: #ffffff;
   }
 }
 
@@ -172,6 +172,11 @@ body {
 .menu__button--close {
   align-self: end;
   margin-bottom: 15px;
+
+  &:hover,
+  &:focus {
+    color: #d41443;
+  }
 
   @media screen and (min-width: 1280px) {
     display: none;
@@ -750,16 +755,16 @@ body {
       top: -47px;
       width: 124px;
       height: 126px;
-      background-image: url('../images/slider-pic5-tab.png');
+      background-image: url('../images/hero-milk-tab.png');
       @media screen and (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-        background-image: url('../images/slider-pic5-tab2x.png');
+        background-image: url('../images/hero-milk-tab@2x.png');
       }
       @media screen and (min-device-pixel-ratio: 3),
         (min-resolution: 288dpi),
         (min-resolution: 3dppx) {
-        background-image: url('../images/slider-pic5-tab3x.png');
+        background-image: url('../images/hero-milk-tab@3x.png');
       }
 
       @media screen and (min-width: 1280px) {
@@ -767,17 +772,17 @@ body {
         height: 191px;
         left: -210px;
         top: -56px;
-        background-image: url('../images/slider-pic5-desktop.png');
+        background-image: url('../images/hero-milk-desktop.png');
         @media screen and (min-device-pixel-ratio: 2),
           (min-resolution: 192dpi),
           (min-resolution: 2dppx) {
-          background-image: url('../images/slider-pic5-desktop2x.png');
+          background-image: url('../images/hero-milk-desktop@2x.png');
         }
 
         @media screen and (min-device-pixel-ratio: 3),
           (min-resolution: 288dpi),
           (min-resolution: 3dppx) {
-          background-image: url('../images/slider-pic5-desktop3x.png');
+          background-image: url('../images/hero-milk-desktop@3x.png');
         }
       }
     }
@@ -971,18 +976,18 @@ body {
     right: 15px;
     width: 171px;
     height: 410px;
-    background-image: url('../images/slider-pic7-mob.png');
+    background-image: url('../images/hero-cone-mob.png');
     z-index: 0;
     @media screen and (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url('../images/slider-pic7-mob2x.png');
+      background-image: url('../images/hero-cone-mob@2x.png');
     }
 
     @media screen and (min-device-pixel-ratio: 3),
       (min-resolution: 288dpi),
       (min-resolution: 3dppx) {
-      background-image: url('../images/slider-pic7-mob3x.png');
+      background-image: url('../images/hero-cone-mob@3x.png');
     }
 
     @media screen and (min-width: 768px) {
@@ -990,17 +995,17 @@ body {
       height: 336px;
       bottom: -34px;
       right: 213px;
-      background-image: url('../images/slider-pic7-tab.png');
+      background-image: url('../images/hero-cone-tab.png');
       @media screen and (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-        background-image: url('../images/slider-pic7-tab2x.png');
+        background-image: url('../images/hero-cone-tab@2x.png');
       }
 
       @media screen and (min-device-pixel-ratio: 3),
         (min-resolution: 288dpi),
         (min-resolution: 3dppx) {
-        background-image: url('../images/slider-pic7-tab3x.png');
+        background-image: url('../images/hero-cone-tab@3x.png');
       }
     }
 
@@ -1009,17 +1014,17 @@ body {
       height: 557px;
       bottom: -56px;
       right: 341px;
-      background-image: url('../images/slider-pic7-desktop.png');
+      background-image: url('../images/hero-cone-desktop.png');
       @media screen and (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-        background-image: url('../images/slider-pic7-desktop2x.png');
+        background-image: url('../images/hero-cone-desktop@2x.png');
       }
 
       @media screen and (min-device-pixel-ratio: 3),
         (min-resolution: 288dpi),
         (min-resolution: 3dppx) {
-        background-image: url('../images/slider-pic7-desktop3x.png');
+        background-image: url('../images/hero-cone-desktop@3x.png');
       }
     }
   }
@@ -1038,16 +1043,16 @@ body {
       height: 133px;
       right: 0;
       bottom: -34px;
-      background-image: url('../images/slider-pic4-tab.png');
+      background-image: url('../images/hero-girl-tab.png');
       @media screen and (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-        background-image: url('../images/slider-pic4-tab2x.png');
+        background-image: url('../images/hero-girl-tab@2x.png');
       }
       @media screen and (min-device-pixel-ratio: 3),
         (min-resolution: 288dpi),
         (min-resolution: 3dppx) {
-        background-image: url('../images/slider-pic4-tab3x.png');
+        background-image: url('../images/hero-girl-tab@3x.png');
       }
 
       @media screen and (min-width: 1280px) {
@@ -1055,17 +1060,17 @@ body {
         height: 232px;
         bottom: -56px;
         right: 0px;
-        background-image: url('../images/slider-pic4-desktop.png');
+        background-image: url('../images/hero-girl-desktop.png');
         @media screen and (min-device-pixel-ratio: 2),
           (min-resolution: 192dpi),
           (min-resolution: 2dppx) {
-          background-image: url('../images/slider-pic4-desktop2x.png');
+          background-image: url('../images/hero-girl-desktop@2x.png');
         }
 
         @media screen and (min-device-pixel-ratio: 3),
           (min-resolution: 288dpi),
           (min-resolution: 3dppx) {
-          background-image: url('../images/slider-pic4-desktop3x.png');
+          background-image: url('../images/hero-girl-desktop@3x.png');
         }
       }
     }
