@@ -63,10 +63,6 @@ body {
     background-color: rgba(25, 28, 38, 0.2);
     z-index: 6;
     @media screen and (min-winth: 1280px) {
-      // position: static;
-      // width: 100%;
-      // height: 100%;
-      // background-color: transparent;
       display: none;
     }
   }
@@ -74,7 +70,7 @@ body {
 
 .menu__container {
   display: flex;
-  background-color: #e17992;
+  background-color: $bg-mobile-menu;
 
   @media screen and (max-width: 479px) {
     position: absolute;
@@ -87,7 +83,7 @@ body {
     z-index: 7;
 
     transform: translateY(-100%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms $timing-function;
   }
 
   @media screen and (min-width: 480px) and (max-width: 767px) {
@@ -102,7 +98,7 @@ body {
     filter: drop-shadow(-8px 0px 20px rgba(0, 0, 0, 0.25));
 
     transform: translateY(-100%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms $timing-function;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
@@ -117,7 +113,7 @@ body {
     filter: drop-shadow(-8px 0px 20px rgba(0, 0, 0, 0.25));
 
     transform: translateY(-100%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms $timing-function;
   }
 
   @media screen and (min-width: 1280px) {
@@ -152,16 +148,16 @@ body {
   font-family: inherit;
   color: inherit;
   background-color: transparent;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms $timing-function;
 
   &:hover,
   &:focus {
-    color: #ffffff;
+    color: $primary-text-color;
   }
 }
 
 .menu__button--open {
-  color: #d41443;
+  color: $accent-color;
   stroke-width: 2px;
 
   @media screen and (min-width: 1280px) {
@@ -172,10 +168,11 @@ body {
 .menu__button--close {
   align-self: end;
   margin-bottom: 15px;
+  transition: color 250ms $timing-function;
 
   &:hover,
   &:focus {
-    color: #d41443;
+    color: $accent-color;
   }
 
   @media screen and (min-width: 1280px) {
@@ -192,14 +189,15 @@ body {
   line-height: 1.31;
   font-weight: 700;
   border-radius: 22px;
-  color: #d41443;
-  background-color: #ffffff;
+  color: $accent-color;
+  background-color: $primary-text-color;
+  transition: color 250ms $timing-function, background-color 250ms $timing-function;
 
   &:hover,
   &:focus,
   &:active {
-    color: #d41443;
-    background-color: #ecebeb;
+    color: $accent-color;
+    background-color: $bg-button-1;
   }
 
   @media screen and (min-width: 768px) {
@@ -257,8 +255,8 @@ body {
     width: 100vw;
     height: 210px;
     background-image: repeating-linear-gradient(
-      #e18298 0px,
-      #e18298 1px,
+      $mobile-menu-gradient 0px,
+      $mobile-menu-gradient 1px,
       transparent 1px,
       transparent 41px
     );
@@ -299,16 +297,16 @@ body {
   position: relative;
   color: inherit;
   z-index: 8;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms $timing-function;
 
   &:hover,
   &:focus {
-    color: #d41443;
+    color: $accent-color;
   }
 }
 
 .menu__link--highlighted {
-  color: #d41443;
+  color: $accent-color;
 }
 
 // .up {
@@ -551,7 +549,7 @@ body {
 
 // HERO SECTION
 .hero {
-  background: #ffb8ca;
+  background: $bg-color-hero;
   padding-top: 193px;
   padding-bottom: 160px;
   overflow: hidden;
@@ -569,7 +567,7 @@ body {
   &__title {
     position: relative;
     margin-bottom: 19px;
-    font-family: 'Titan One', cursive;
+    font-family: $secondary-font;
     font-size: 26px;
     font-weight: 400;
     line-height: 1.15;
@@ -633,12 +631,12 @@ body {
 
 .statistics__amount {
   position: relative;
-  font-family: 'Titan One', cursive;
+  font-family: $secondary-font;
   font-size: 28px;
   line-height: 1.14;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #d41443;
+  color: $accent-color;
   z-index: 0;
 
   @media screen and (min-width: 1280px) {
@@ -654,7 +652,7 @@ body {
     right: -10px;
     width: 16px;
     height: 16px;
-    background: #ffffff;
+    background: $primary-text-color;
     border-radius: 50%;
     z-index: -1;
 
@@ -681,7 +679,7 @@ body {
   display: block;
   font-size: 48px;
   line-height: 0.965;
-  color: #d41443;
+  color: $accent-color;
 
   @media screen and (min-width: 768px) {
     font-size: 34px;
@@ -722,9 +720,10 @@ body {
     }
   }
   &__products {
-    color: #ffffff;
-    background-color: #d41443;
+    color: $primary-text-color;
+    background-color: $accent-color;
     margin-right: 8px;
+    transition: background-color 250ms $timing-function;
 
     @media screen and (min-width: 1280px) {
       margin-right: 15px;
@@ -732,16 +731,17 @@ body {
 
     &:hover,
     &:focus {
-      background-color: #c7133e;
+      background-color: $bg-button-hover;
     }
   }
   &__made {
-    color: #d41443;
-    background-color: #ffffff;
+    color: $accent-color;
+    background-color: $primary-text-color;
+    transition: background-color 250ms $timing-function;
 
     &:hover,
     &:focus {
-      background-color: #ecebeb;
+      background-color: $bg-button-1;
     }
   }
 }
@@ -807,7 +807,7 @@ body {
   &__text {
     font-size: 8px;
     line-height: 1.5;
-    color: #ffffff;
+    color: $primary-text-color;
     margin-bottom: 7px;
 
     @media screen and (min-width: 1280px) {
@@ -846,7 +846,7 @@ body {
     right: -79px;
     width: 346px;
     height: 344px;
-    background: #ffa5ba;
+    background: $secondary-accent-color;
     border-radius: 50%;
     z-index: 0;
     @media screen and (min-width: 768px) {
