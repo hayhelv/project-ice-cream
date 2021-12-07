@@ -1,0 +1,123 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 184, 202, 0.6);
+}
+
+.modal-learn {
+    width: 90%;
+    background-color: #fff;
+    position: absolute;
+    height: 90%;
+    top: 5%;
+    left: 5%;
+    border-radius: 5px;
+    padding-top: 40px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+
+}
+.modal-learn-btn {
+    background-color: transparent;
+    border-color: transparent;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    & .backdrop__icon {
+        @media screen and(max-width:767px) {
+            width: 25px;
+            height: 25px;
+        }
+    }
+
+    &:hover .backdrop__icon, &:focus .backdrop__icon, &:active .backdrop__icon{
+        background-color: #ECEBEB;
+    }
+}
+.modal-learn__header {
+
+    font-family: Titan One;
+font-style: normal;
+font-weight: normal;
+font-size: 26px;
+line-height: 1.15;
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+color: #D41443;
+
+@media screen and(min-width:768px) {
+    font-size: 32px;
+}
+
+@media screen and (min-width:1280px) {
+    font-size: 58px;
+    line-height: 1.14;
+}
+}
+
+.modal-learn__list {
+    padding-top: 20px;
+    @media screen and(min-width:768px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    @media screen and(min-width:1280px) {
+        padding-top: 80px;
+    }
+        
+    
+}
+.modal-learn__text {
+    display: block;
+    font-weight: 500;
+    color: #907E82;
+
+    @media screen and(max-width:767px){
+        
+font-size: 9px;
+line-height: 1.62;
+}
+    
+@media screen and(min-width:768px) {
+    font-size: 16px;
+}
+font-size: 20px;
+line-height: 1.5;
+}
+.modal-learn__item {
+    display: flex;
+    &:nth-child(2n) {
+        flex-direction: row-reverse;
+        background-color: rgba(255, 184, 202, 0.5);
+        @media screen and(min-width:1280px) {
+            flex-direction: row;
+        }
+    }
+    @media screen and(max-width:767px) {
+        margin-bottom: 30px;
+        align-items: center;
+        justify-content: center;
+    }
+    @media screen and(min-width:768px) {
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        
+    }
+    @media screen and(min-width:1280px) {
+        flex-basis: calc((100% - 90px) / 3);
+        
+    }
+}
+.modal-learn__image {
+    display: block;
+    width: 100px;
+    height: auto;
+
+
+}
