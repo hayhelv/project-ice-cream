@@ -11,7 +11,7 @@
     background-color: #fff;
     position: absolute;
     height: 90%;
-    top: 7%;
+    top: 5%;
     left: 5%;
     border-radius: 5px;
     padding-top: 40px;
@@ -75,9 +75,14 @@ color: #D41443;
 .modal-learn__text {
     display: block;
     font-weight: 500;
+    color: #907E82;
+
+    @media screen and(max-width:767px){
+        
 font-size: 9px;
 line-height: 1.62;
-color: #907E82;
+}
+    
 @media screen and(min-width:768px) {
     font-size: 16px;
 }
