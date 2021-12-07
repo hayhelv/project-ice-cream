@@ -1,5 +1,5 @@
 <div class="sidescene sidescene--hidden" id="sidescene" data-modal0>
-  <button class="sidescene__button" data-modal-close0 type="button">
+  <button class="sidescene__button" id="sidescene__button" data-modal-close0 type="button">
     <svg class="sidescene__icon" width="40" height="40">
       <use href="./images/icons.svg#icon-close"></use>
     </svg>
@@ -40,6 +40,8 @@
           type="tel"
           name="phone"
           placeholder="Phone Number *"
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+          title="Please follow this Phone Number format: 123-456-7890."
           required
         />
         <div class="form__products" id="form__products">
