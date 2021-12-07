@@ -4,37 +4,18 @@
       <div class="menu__mobile">
         <a class="logo" href="./index.html">
           <picture>
-            <source
-              srcset="images/logo.webp 1x, images/logo2x.webp 2x, images/logo3x.webp 3x"
-              type="image/webp"
-            />
-            <source
-              srcset="images/logo.png 1x, images/logo2x.png 2x, images/logo3x.png 3x"
-              type="image/png"
-            />
+            <source srcset="images/logo.webp 1x, images/logo2x.webp 2x, images/logo3x.webp 3x" type="image/webp" />
+            <source srcset="images/logo.png 1x, images/logo2x.png 2x, images/logo3x.png 3x" type="image/png" />
             <img src="images/logo.png" alt="Logo" width="199" height="50" />
           </picture>
         </a>
-        <button
-          class="menu__button menu__button--open js-open-menu"
-          type="button"
-          aria-expanded="false"
-        >
-          <svg
-            class="menu__icon"
-            width="20"
-            height="20"
-            aria-label="Переключатель мобильного меню"
-            aria-controls="menu__container"
-          >
+        <button class="menu__button menu__button--open js-open-menu" type="button" aria-expanded="false">
+          <svg class="menu__icon" width="20" height="20" aria-label="Переключатель мобильного меню"
+            aria-controls="menu__container">
             <use href="images/icons.svg#icon-burger"></use>
           </svg>
         </button>
-        <button
-          class="menu__button menu__button--buy menu__button--tablet"
-          type="button"
-          data-modal-open1
-        >
+        <button class="menu__button menu__button--buy menu__button--tablet" type="button" data-modal-open1>
           Buy now<svg class="menu__icon menu__icon--buy" width="8" height="10">
             <use href="images/icons.svg#icon-greater-than"></use>
           </svg>
@@ -42,25 +23,12 @@
       </div>
       <div class="menu__overlay menu__for-mobiles js-menu-container">
         <div class="menu__container" id="menu__container">
-          <button
-            class="menu__button menu__button--close js-close-menu"
-            type="button"
-            aria-expanded="false"
-          >
-            <svg
-              class="menu__icon"
-              width="14"
-              height="14"
-              aria-label="Переключатель мобильного меню"
-            >
+          <button class="menu__button menu__button--close js-close-menu" type="button" aria-expanded="false">
+            <svg class="menu__icon" width="14" height="14" aria-label="Переключатель мобильного меню">
               <use href="images/icons.svg#icon-close"></use>
             </svg>
           </button>
-          <button
-            class="menu__button menu__button--buy menu__button--mobile"
-            type="button"
-            data-modal-open0
-          >
+          <button class="menu__button menu__button--buy menu__button--mobile" type="button" data-modal-open0>
             Buy now<svg class="menu__icon menu__icon--buy" width="8" height="10">
               <use href="images/icons.svg#icon-greater-than"></use>
             </svg>
@@ -106,11 +74,7 @@
             </li>
           </ul>
         </nav>
-        <button
-          class="menu__button menu__button--buy menu__button--desktop"
-          type="button"
-          data-modal-open0
-        >
+        <button class="menu__button menu__button--buy menu__button--desktop" type="button" data-modal-open0>
           Buy now<svg class="menu__icon menu__icon--buy" width="8" height="10">
             <use href="images/icons.svg#icon-greater-than"></use>
           </svg>
@@ -209,36 +173,51 @@
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           ut labore et
         </p>
-        <button class="disctiption__btn">
+        <button class="disctiption__btn" hero-milk-modal-open>
           <picture>
-            <source
-              srcset="
+            <source srcset="
                 images/arrow-right3.webp   1x,
                 images/arrow-right32x.webp 2x,
                 images/arrow-right33x.webp 3x
-              "
-              type="image/webp"
-            />
-            <source
-              srcset="
+              " type="image/webp" />
+            <source srcset="
                 images/arrow-right3.png   1x,
                 images/arrow-right32x.png 2x,
                 images/arrow-right33x.png 3x
-              "
-              type="image/png"
-            />
+              " type="image/png" />
             <img src="images/arrow-right3.png" alt="arrow-right3" />
           </picture>
         </button>
       </div>
 
       <div class="hero__image--cone animate__animated animate__zoomIn"></div>
-      <div
-        class="
+      <div class="
           hero__image--girl
           animate__animated animate__pulse animate__delay-10s animate__infinite
-        "
-      ></div>
+        "></div>
     </div>
   </section>
 
+  <div class="products-backdrop is-hidden" hero-milk-modal>
+    <div class="products-modal products-modal--fourth">
+      <button class="products-modal__close-btn" hero-milk-modal-close>
+        <svg class="products-modal__icon-close" width="18" height="18" fill="#000000"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M15 4.108 13.892 3 9.5 7.392 5.108 3 4 4.108 8.392 8.5 4 12.892 5.108 14 9.5 9.608 13.892 14 15 12.892 10.608 8.5 15 4.108Z" />
+        </svg>
+      </button>
+      <p class="products-modal__title products-modal__title--fourth">organic milk</p>
+      <p class="products-modal__description products-modal__description--hero">Organic milk refers to a number of milk
+        products from livestock raised
+        according to organic farming methods. In most
+        jurisdictions, use of the term "organic" or equivalents like "bio" or "eco", on any product is regulated by food
+        authorities. In general these regulations stipulate that livestock must be: allowed to graze, be fed an
+        organically
+        certified fodder or compound feed, not be treated with most drugs (including bovine growth hormone), and in
+        general must
+        be treated humanely.</p>
+    </div>
+  </div>
+
+  <script src="./js/hero-modal.js"></script>
