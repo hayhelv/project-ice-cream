@@ -15,9 +15,9 @@
 
 (() => {
   const refs = {
-    openModalBtn: document.querySelector('[data-modal-map-second-open]'),
-    closeModalBtn: document.querySelector('[data-modal-map-second-close]'),
-    modal: document.querySelector('[data-modal-map-second]'),
+    openModalBtn: document.querySelector('[data-modal-franchise-open]'),
+    closeModalBtn: document.querySelector('[data-modal-franchise-close]'),
+    modal: document.querySelector('[data-modal-franchise]'),
   };
 
   refs.openModalBtn.addEventListener('click', toggleModal);
