@@ -1,9 +1,9 @@
-<div class="backdrop backdrop--hidden" id="backdrop" data-modal0>
-  <button class="backdrop__button" data-modal-close0 type="button">
-    <svg class="backdrop__icon" width="40" height="40">
+<div class="sidescene sidescene--hidden" id="sidescene" data-modal0>
+  <button class="sidescene__button" data-modal-close0 type="button">
+    <svg class="sidescene__icon" width="40" height="40">
       <use href="./images/icons.svg#icon-close"></use>
     </svg>
-    <span class="backdrop__label visually-hidden">Close</span>
+    <span class="sidescene__label visually-hidden">Close</span>
   </button>
   <div class="modal" id="modal">
     <form class="form modal__form" autocomplete="on" id="form">
@@ -14,7 +14,8 @@
           id="form-mail"
           type="email"
           name="mail"
-          placeholder="Your E-mail"
+          placeholder="Your E-mail *"
+          required
         />
         <div class="form__field">
           <input
@@ -22,7 +23,8 @@
             id="form-first-name"
             type="text"
             name="first-name"
-            placeholder="First Name"
+            placeholder="First Name *"
+            required
           />
           <input
             class="form__input"
@@ -37,7 +39,8 @@
           id="form-phone"
           type="tel"
           name="phone"
-          placeholder="Phone Number"
+          placeholder="Phone Number *"
+          required
         />
         <div class="form__products" id="form__products">
           <p class="form__caption">Choose products to order:</p>

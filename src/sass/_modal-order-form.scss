@@ -1,4 +1,4 @@
-.backdrop {
+.sidescene {
   position: fixed;
   top: 0;
   left: 0;
@@ -12,12 +12,12 @@
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop.backdrop--hidden {
+.sidescene.sidescene--hidden {
   opacity: 0;
   pointer-events: none;
 }
 
-.backdrop__button {
+.sidescene__button {
   position: absolute;
   top: 5px;
   right: 5px;
@@ -26,21 +26,21 @@
   color: inherit;
   background-color: inherit;
   border-color: transparent;
-  outline: #ffffff;
+  outline: $primary-text-color;
   z-index: 6;
 }
 
-.backdrop__icon {
+.sidescene__icon {
   display: block;
   border: 2px solid #d31342;
   stroke: #d31342;
-  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: stroke 250ms $timing-function, border 250ms $timing-function;
 
-  .backdrop__button:hover &,
-  .backdrop__button:focus &,
-  .backdrop__button:active & {
-    stroke: #ffffff;
-    border: 3px solid #ffffff;
+  .sidescene__button:hover &,
+  .sidescene__button:focus &,
+  .sidescene__button:active & {
+    stroke: $primary-text-color;
+    border: 3px solid $primary-text-color;
   }
 }
 
@@ -56,11 +56,16 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  background-color: #ffa5ba;
-  background-image: linear-gradient(to bottom, #fff5f6 30%, #ffffff 70%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: $secondary-accent-color;
+  background-image: linear-gradient(
+    $bg-color-dark,
+    $bg-color-dark 60%,
+    $bg-color-light 60%,
+    $bg-color-light 100%
+  );
+  transition: transform 250ms $timing-function;
 
-  .backdrop.backdrop--hidden & {
+  .sidescene.sidescene--hidden & {
     transform: translate(-50%, -50%) scale(0.2);
   }
 
@@ -81,7 +86,7 @@
   margin-bottom: 4px;
   font-size: 16px;
   line-height: 1.5;
-  color: #000000;
+  color: $text-color-dark;
   border-radius: 8px;
 
   @media screen and (min-width: 1279px) {
@@ -105,19 +110,19 @@
   margin-bottom: 10px;
   font-size: 14px;
   line-height: 1.17;
-  border: 1px solid #d31342;
+  border: 1px solid $slider-paging-accent-color;
   border-radius: 4px;
-  color: #000000;
-  background-color: #ffffff;
+  color: $text-color-dark;
+  background-color: $primary-text-color;
   outline: none;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:focus {
-    border: 1px solid #000000;
+    border: 1px solid $text-color-dark;
   }
 
   &:out-of-range {
-    border: 1px solid #907e82;
+    border: 1px solid $text-color-light;
   }
 
   &::placeholder {
@@ -127,7 +132,7 @@
 
 .form__caption {
   margin-bottom: 5px;
-  color: #000000;
+  color: $text-color-dark;
 }
 
 .form__button {
@@ -139,13 +144,12 @@
   line-height: 1.87;
   letter-spacing: 0.06em;
   border-radius: 4px;
-  color: #ffffff;
-  background-color: #d41342;
+  color: $primary-text-color;
+  background-color: $bg-button-2;
   border-color: transparent;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms $timing-function, color 250ms $timing-function;
 
   .form__products & {
     margin-bottom: 10px;
@@ -153,7 +157,7 @@
 
   &:hover,
   &:focus {
-    color: #d41342;
-    background-color: #ffffff;
+    color: $bg-button-2;
+    background-color: $primary-text-color;
   }
 }

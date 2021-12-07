@@ -9,6 +9,21 @@
   refs.closeModalBtn.addEventListener('click', toggleModal);
 
   function toggleModal() {
-    refs.modal.classList.toggle('backdrop--hidden');
+    refs.modal.classList.toggle('sidescene--hidden');
+  }
+})();
+
+(() => {
+  const refs = {
+    openModalBtn: document.querySelector('[data-modal-open1]'),
+    closeModalBtn: document.querySelector('.sidescene__button')[0],
+    modal: document.querySelector('.sidescene'),
+  };
+
+  refs.openModalBtn.addEventListener('click', toggleModal);
+  refs.closeModalBtn.addEventListener('click', toggleModal);
+
+  function toggleModal() {
+    refs.modal.classList.toggle('sidescene--hidden');
   }
 })();
