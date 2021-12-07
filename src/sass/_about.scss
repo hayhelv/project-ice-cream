@@ -1,6 +1,6 @@
 .about {
   background-color: #fff5f6;
-  padding-top: 189px;
+  padding-top: 125px;
   padding-bottom: 39px;
 
   @media screen and (max-width: 767px) {
@@ -145,7 +145,7 @@
 }
 
 .about-content__item-b {
-  margin-bottom: 20px;
+  margin-bottom: 17px;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 62px;
@@ -264,6 +264,7 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 1.28;
+  cursor: pointer;
 
   color: #d41443;
 
