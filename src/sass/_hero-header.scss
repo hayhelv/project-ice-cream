@@ -251,6 +251,14 @@ body {
       transparent 41px
     );
     z-index: 6;
+    @media screen and (min-width: 480px) {
+      width: 100%;
+      left: -21px;
+    }
+
+    @media screen and (min-width: 768px) {
+      left: -24px;
+    }
 
     @media screen and (min-width: 1280px) {
       display: none;
