@@ -350,6 +350,8 @@
   border: none;
   border-radius: 50%;
 
+  cursor: pointer;
+
   background-image: url(../images/arrow-right4.png);
   background-size: contain;
 
@@ -363,7 +365,7 @@
 
 // MODAL
 
-.backdrop {
+.products-backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -382,7 +384,7 @@
   }
 }
 
-.modal {
+.products-modal {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -407,19 +409,19 @@
   }
 }
 
-.modal--first {
+.products-modal--first {
   background-color: rgba(255, 184, 202, 0.9);
 }
 
-.modal--second {
+.products-modal--second {
   background-color: rgba(240, 209, 165, 0.9);
 }
 
-.modal--third {
+.products-modal--third {
   background-color: rgba(194, 226, 151, 0.9);
 }
 
-.modal__close-btn {
+.products-modal__close-btn {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -438,16 +440,16 @@
   cursor: pointer;
 }
 
-.modal__icon-close {
+.products-modal__icon-close {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  .modal__close-btn:hover &,
-  .modal__close-btn:focus & {
+  .products-modal__close-btn:hover &,
+  .products-modal__close-btn:focus & {
     fill: #d41443;
   }
 }
 
-.modal__title {
+.products-modal__title {
   margin-bottom: 15px;
 
   font-family: Titan One;
@@ -467,19 +469,19 @@
   }
 }
 
-.modal__title--first {
+.products-modal__title--first {
   color: rgb(219, 37, 82);
 }
 
-.modal__title--second {
+.products-modal__title--second {
   color: rgb(209, 141, 46);
 }
 
-.modal__title--third {
+.products-modal__title--third {
   color: rgb(97, 168, 3);
 }
 
-.modal__description {
+.products-modal__description {
   font-family: DM Sans;
   font-style: normal;
   font-weight: 700;
