@@ -415,6 +415,8 @@
   height: 100%;
   z-index: 10;
   overflow: auto;
+  background-repeat: no-repeat;
+  background-size: contain;
   background-color: rgb(255, 245, 246, 0.7);
   background-image: linear-gradient(to right, rgb(255, 165, 186, 0.5), rgb(255, 165, 186, 0.5)),
     url(../images/ice-cream-modal.jpg);
@@ -545,6 +547,8 @@
   height: 100%;
   z-index: 10;
   overflow: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: rgb(255, 245, 246, 0.7);
   background-image: linear-gradient(to right, rgb(255, 165, 186, 0.5), rgb(255, 165, 186, 0.5)),
     url(../images/ice-cream-background.jpg);
@@ -579,8 +583,6 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    width: 55%;
-    height: 92%;
   }
 }
 
