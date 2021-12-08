@@ -62,7 +62,7 @@ body {
     height: 100vh;
     background-color: rgba(25, 28, 38, 0.2);
     z-index: 6;
-    @media screen and (min-winth: 1280px) {
+    @media screen and (min-width: 1280px) {
       display: none;
     }
   }
