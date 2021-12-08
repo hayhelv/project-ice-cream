@@ -1,7 +1,3 @@
-$(".menu__button--buy").click(function(){
-        $("#sidescene").toggle();
-});
-
-$(".sidescene__button").click(function(){
+$(".menu__button--buy, .sidescene__button").click(function(){
         $("#sidescene").toggle();
 });
