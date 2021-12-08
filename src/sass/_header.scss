@@ -1,12 +1,6 @@
 body {
   max-width: 100%;
   overflow-x: hidden;
-
-  @media screen and (min-width: 480px) and (max-width: 1279px) {
-    .menu__overlay.is-open & {
-      position: fixed;
-    }
-  }
 }
 
 .header {
