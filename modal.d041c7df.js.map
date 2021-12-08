@@ -1,0 +1,1 @@
+{"version":3,"sources":["js/modal.js"],"names":["$","click","toggle"],"mappings":";AAAAA,EAAE,0CAA0CC,MAAM,WAC1CD,EAAE,cAAcE","file":"modal.d041c7df.js","sourceRoot":"../src","sourcesContent":["$(\".menu__button--buy, .sidescene__button\").click(function(){\n        $(\"#sidescene\").toggle();\n});\n"]}
