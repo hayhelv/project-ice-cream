@@ -2,9 +2,11 @@ body {
   font-family: 'DM Sans', sans-serif;
   color: #ffffff;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 h1,
 h2,
 h3,
@@ -18,21 +20,26 @@ address {
   margin: 0;
   padding: 0;
 }
+
 ul {
   list-style: none;
 }
+
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
+
 a {
   text-decoration: none;
   color: inherit;
 }
+
 address {
   font-style: inherit;
 }
+
 .container {
   margin: 0 auto;
   padding: 0 15px;
@@ -41,10 +48,23 @@ address {
   }
 
   @media screen and (min-width: 768px) {
-    width: 768px;
+    width: 730px;
   }
 
   @media screen and (min-width: 1280px) {
     width: 1080px;
   }
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0px;
+  padding: 0px;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
