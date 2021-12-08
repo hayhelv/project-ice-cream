@@ -13,7 +13,10 @@
     display: flex;
     gap: 60px;
   }
-  @media screen and(min-width:1280px) {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    padding-right: 40px;
+  }
+  @media screen and (min-width: 1280px) {
     gap: 30px;
   }
 }
@@ -23,7 +26,7 @@
     width: 230px;
   }
   @media screen and(min-width:768px) {
-    flex-basis: calc((100% - 180px) / 3);
+    flex-basis: calc((100% - 120px) / 3);
   }
   @media screen and(min-width:1280px) {
     flex-basis: calc((100% - 90px) / 3);
