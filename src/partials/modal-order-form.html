@@ -9,44 +9,56 @@
     <form class="form modal__form" autocomplete="on" id="form">
       <div class="form__group" role="group" aria-labelledby="form-details">
         <h2 class="form__title" id="form-details">Please place Your order here</h2>
-        <input
-          class="form__input"
-          id="form-mail"
-          type="email"
-          name="mail"
-          placeholder="Your E-mail *"
-          required
-        />
         <div class="form__field">
           <input
             class="form__input"
-            id="form-first-name"
-            type="text"
-            name="first-name"
-            placeholder="First Name *"
+            id="form-mail"
+            type="email"
+            name="mail"
+            placeholder="Your E-mail *"
             required
           />
+          <label class="form__label" for="form-mail">E-mail *</label>
+        </div>
+        <div class="form__fields">
+          <div class="form__field">
+            <input
+              class="form__input"
+              id="form-first-name"
+              type="text"
+              name="first-name"
+              placeholder="First Name *"
+              required
+            />
+            <label class="form__label" for="form-first-name">First Name *</label>
+          </div>
+          <div class="form__field">
+            <input
+              class="form__input"
+              id="form-last-name"
+              type="text"
+              name="last-name"
+              placeholder="Last Name"
+            />
+            <label class="form__label" for="form-last-name">Last Name</label>
+          </div>
+        </div>
+        <div class="form__field">
           <input
             class="form__input"
-            id="form-last-name"
-            type="text"
-            name="last-name"
-            placeholder="Last Name"
+            id="form-phone"
+            type="tel"
+            name="phone"
+            placeholder="Phone Number *"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            title="Please follow this Phone Number format: 123-456-7890."
+            required
           />
+          <label class="form__label" for="form-phone">Phone Number *</label>
         </div>
-        <input
-          class="form__input"
-          id="form-phone"
-          type="tel"
-          name="phone"
-          placeholder="Phone Number *"
-          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-          title="Please follow this Phone Number format: 123-456-7890."
-          required
-        />
         <div class="form__products" id="form__products">
           <p class="form__caption">Choose products to order:</p>
-          <div class="form__field form__product">
+          <div class="form__fields form__product">
             <select class="form__input" id="form-product" name="product-1">
               <option value="ice-cream" selected>Ice Cream</option>
               <option value="ice-coffee">Ice Coffee</option>
@@ -78,22 +90,32 @@
             Add more products
           </button>
         </div>
-        <input
-          class="form__input"
-          id="form-address"
-          type="text"
-          name="address"
-          placeholder="Address"
-        />
-        <input class="form__input" id="form-time" type="datetime-local" name="datetime" />
-        />
-        <input
-          class="form__input"
-          id="form-comments"
-          type="text"
-          name="comments"
-          placeholder="Special instructions"
-        />
+        <div class="form__field">
+          <input
+            class="form__input"
+            id="form-address"
+            type="text"
+            name="address"
+            placeholder="Address"
+          />
+          <label class="form__label" for="form-address">Address</label>
+        </div>
+        <div class="form__field">
+          <select class="form__input form__input--date" id="form-date" name="date">
+            <option value="Today" selected>Today</option>
+            <option value="Tomorrow">Tommorow</option>
+          </select>
+        </div>
+        <div class="form__field">
+          <input
+            class="form__input"
+            id="form-instructions"
+            type="text"
+            name="incstuctions"
+            placeholder="Special instructions"
+          />
+          <label class="form__label" for="form-instructions">Special instructions</label>
+        </div>
       </div>
       <button class="button form__button" type="submit">Submit</button>
     </form>
