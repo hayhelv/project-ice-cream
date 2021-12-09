@@ -29,7 +29,7 @@
     flex-basis: calc((100% - 120px) / 3);
   }
   @media screen and(min-width:1280px) {
-    flex-basis: calc((100% - 90px) / 3);
+    flex-basis: calc((100% - 60px) / 3);
   }
   &:not(:last-child) {
     @media screen and(max-width:767px) {
