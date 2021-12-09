@@ -97,10 +97,6 @@
   .form__products & {
     align-items: unset;
   }
-
-  @media screen and (max-width: 480px) {
-    display: block;
-  }
 }
 
 .form__field {
