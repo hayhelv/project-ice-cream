@@ -1,6 +1,6 @@
 // add all the elements inside modal which you want to make focusable
 const  focusableElements =
-    'button, input, select, textarea, [tabindex]:not([tabindex="-1"])';
+    'button, input, select, [tabindex]:not([tabindex="-1"])';
 const modal = document.querySelector('#sidescene'); // select the modal by it's id
 
 const firstFocusableElement = modal.querySelectorAll(focusableElements)[0]; // get first element to be focused inside modal

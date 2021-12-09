@@ -255,7 +255,7 @@
 
   height: 44px;
 
-  background: #ffffff;
+  background-color: #ffffff;
   border-radius: 22px;
   border: none;
 
@@ -268,9 +268,11 @@
 
   color: #d41443;
 
+  transition: background-color 250ms $timing-function;
+
   &:hover,
   &:focus {
-    background: #ecebeb;
+    background-color: #ecebeb;
   }
 
   @media screen and (min-width: 768px) {
