@@ -89,16 +89,51 @@
   }
 }
 
-.form__field {
+.form__fields {
   display: flex;
+  align-items: flex-end;
   gap: 5px;
+
+  .form__products & {
+    align-items: unset;
+  }
+
+  @media screen and (max-width: 480px) {
+    display: block;
+  }
+}
+
+.form__field {
+  position: relative;
+  flex-grow: 2;
+  margin-bottom: 15px;
+
+  .form__fields & {
+    margin-bottom: 0px;
+  }
+}
+
+.form__label {
+  display: block;
+  position: absolute;
+  top: -12px;
+  font-size: 0.8rem;
+  line-height: 1;
+  text-align: left;
+  color: $slider-paging-accent-color;
+  opacity: 0;
+  .form__field:focus-within & {
+    opacity: 1;
+  }
+  .form__input:not(:placeholder-shown) ~ & {
+    opacity: 1;
+  }
 }
 
 .form__input {
   display: block;
   width: 100%;
   padding: 10px;
-  margin-bottom: 10px;
   font-size: 14px;
   line-height: 1.17;
   border: 1px solid $slider-paging-accent-color;
@@ -119,11 +154,19 @@
   &::placeholder {
     color: rgba(0, 0, 0, 0.7);
   }
+
+  .form__fields & {
+    margin-bottom: 15px;
+  }
 }
 
 .form__caption {
   margin-bottom: 5px;
   color: $text-color-dark;
+}
+
+.form__products {
+  align-content: stretch;
 }
 
 .form__button {
@@ -143,7 +186,7 @@
   transition: background-color 250ms $timing-function, color 250ms $timing-function;
 
   .form__products & {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
 
   &:hover,
